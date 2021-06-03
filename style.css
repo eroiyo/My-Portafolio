@@ -1,13 +1,12 @@
 body {
-
   margin: 0;
   position: absolute;
   width: 376px;
   height: 800px;
   background-color: white;
 }
-section {
 
+section {
   height: 800px;
   box-sizing: border-box;
   display: flex;
@@ -21,8 +20,8 @@ section {
   background-attachment: fixed;
   background-color: #191765;
 }
-h1 {
 
+h1 {
   position: static;
   width: 327px;
   height: 55px;
@@ -42,8 +41,8 @@ h1 {
   order: 0;
   flex-grow: 0;
 }
-.jhon-doe {
 
+.jhon-doe {
   font-family: "Roboto";
   font-style: normal;
   line-height: 16px;
@@ -65,8 +64,8 @@ h1 {
   flex-grow: 0;
   margin: 0px 0px;
 }
-h2 {
 
+h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -76,7 +75,6 @@ h2 {
 }
 
 p {
-
   position: static;
   width: 327px;
   height: 170px;
@@ -96,7 +94,6 @@ p {
 }
 
 .circle {
-
   position: absolute;
   width: 160px;
   height: 160px;
@@ -105,8 +102,8 @@ p {
   background: #edecff;
   filter: blur(50px);
 }
-.circle2 {
 
+.circle2 {
   position: absolute;
   width: 68px;
   height: 68px;
@@ -115,30 +112,29 @@ p {
   background: #edecff;
   filter: blur(50px);
 }
-header {
 
+header {
   align-self: flex-start;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.menu {
 
+.menu {
   margin-left: 70%;
   margin-top: 5%;
 }
 
 p {
-
   margin-bottom: 20px;
 }
-.bar {
 
+.bar {
   width: 300px;
   height: 0.5px;
 }
-th {
 
+th {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -146,19 +142,17 @@ th {
   line-height: 28px;
   color: #9390ff;
 }
-* {
 
+* {
   font-family: "Roboto";
 }
-#link {
 
+#link {
   position: relative;
   top: 176px;
-
 }
 
 #connect {
-
   position: static;
   width: 130px;
   height: 24px;
@@ -170,11 +164,9 @@ th {
   color: #7f8cff;
   margin-left: 20px;
   margin-right: 20px;
-
 }
 
 #social-media {
-
   position: relative;
   top: 0px;
   list-style-type: none;
@@ -185,12 +177,10 @@ th {
 }
 
 li {
-
   float: left;
 }
 
 li a {
-  
   display: block;
   color: white;
   text-align: center;

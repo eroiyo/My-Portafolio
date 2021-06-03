@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  position: absolute;
+  width: 376px;
+  height: 800px;
+  background-color: white;
+  overflow-x: hi;
+}
+
+section {
+  height: 800px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #191765;
+}
+h1 {
+  /* Primary Text */
+
+  position: static;
+  width: 327px;
+  height: 55px;
+  left: 0px;
+  top: 0px;
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 0px;
+  /* or 150% */
+
+  text-align: center;
+  letter-spacing: 0.37px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  line-height: 72px;
+  color: #7d73fc;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.jhon-doe {
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: 16px;
+  position: static;
+  width: 81px;
+  left: 12px;
+  top: 10px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  /* John Doe */
+
+  width: 81px;
+
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #edecff;
+}
+
+p {
+  /* I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me. */
+
+  position: static;
+  width: 327px;
+  height: 170px;
+  left: 0px;
+  top: 0px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+  text-align: center;
+
+  /* Theme 4 / Neutral 7 */
+  color: #c8c8d4;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.circle {
+  /* Ellipse 18 */
+
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: -106px;
+  top: 0px;
+
+  /* Theme 4 / Primary 4 */
+  background: #edecff;
+  filter: blur(50px);
+}
+.circle2 {
+  /* Ellipse 19 */
+
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  left: 298px;
+  top: 495px;
+
+  /* Theme 4 / Primary 4 */
+  background: #edecff;
+  filter: blur(50px);
+}
+header {
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.menu {
+  margin-left: 70%;
+  margin-top: 5%;
+}
+
+p {
+  margin-bottom: 20px;
+}
+.bar {
+  width: 300px;
+  height: 0.5px;
+}
+h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #9390ff;
+}
+* {
+  font-family: "Roboto";
+}
+#link {
+  position: relative;
+  top: 176px;
+}
+
+#connect {
+  position: static;
+  width: 130px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#social-media {
+  position: relative;
+  top: 0px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}

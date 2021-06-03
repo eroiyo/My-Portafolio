@@ -4,9 +4,7 @@ body {
   width: 376px;
   height: 800px;
   background-color: white;
-  overflow-x: hi;
 }
-
 section {
   height: 800px;
   box-sizing: border-box;
@@ -22,8 +20,6 @@ section {
   background-color: #191765;
 }
 h1 {
-  /* Primary Text */
-
   position: static;
   width: 327px;
   height: 55px;
@@ -32,8 +28,6 @@ h1 {
   font-size: 48px;
   line-height: 72px;
   margin-bottom: 0px;
-  /* or 150% */
-
   text-align: center;
   letter-spacing: 0.37px;
   font-family: "Roboto";
@@ -41,7 +35,6 @@ h1 {
   font-weight: bold;
   line-height: 72px;
   color: #7d73fc;
-  /* Inside Auto Layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -56,19 +49,13 @@ h1 {
   top: 10px;
   color: #ffffff;
   letter-spacing: 0.03em;
-  /* John Doe */
-
   width: 81px;
-
   font-weight: 500;
   font-size: 18px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -84,26 +71,18 @@ h2 {
 }
 
 p {
-  /* I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me. */
-
   position: static;
   width: 327px;
   height: 170px;
   left: 0px;
   top: 0px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  /* or 140% */
   text-align: center;
-
-  /* Theme 4 / Neutral 7 */
   color: #c8c8d4;
-
-  /* Inside Auto Layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -111,28 +90,20 @@ p {
 }
 
 .circle {
-  /* Ellipse 18 */
-
   position: absolute;
   width: 160px;
   height: 160px;
   left: -106px;
   top: 0px;
-
-  /* Theme 4 / Primary 4 */
   background: #edecff;
   filter: blur(50px);
 }
 .circle2 {
-  /* Ellipse 19 */
-
   position: absolute;
   width: 68px;
   height: 68px;
   left: 298px;
   top: 495px;
-
-  /* Theme 4 / Primary 4 */
   background: #edecff;
   filter: blur(50px);
 }

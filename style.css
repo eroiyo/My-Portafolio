@@ -169,6 +169,10 @@ li {
   float: left;
 }
 
+td{
+  color: #edecff;
+}
+
 li a {
   display: block;
   color: white;

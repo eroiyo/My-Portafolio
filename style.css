@@ -78,7 +78,7 @@ p {
   order: 0;
   flex-grow: 0;
   margin: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .circle {
@@ -115,7 +115,12 @@ nav {
 .bar {
   width: 300px;
   height: 0.5px;
-  margin-top: 30px;
+  margin-top: 60px;
+}
+.bar2 {
+  width: 300px;
+  height: 0.5px;
+  margin-top: 0px;
 }
 
 th {

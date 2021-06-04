@@ -122,7 +122,6 @@ p {
 }
 
 .fog {
-
   position: absolute;
   width: 39.61px;
   height: 482.57px;
@@ -135,7 +134,6 @@ p {
 }
 
 .fog2 {
-
   position: absolute;
   width: 70.28px;
   height: 261.6px;
@@ -147,7 +145,6 @@ p {
 }
 
 .fog3 {
-
   position: absolute;
   width: 308px;
   height: 155px;
@@ -157,14 +154,11 @@ p {
   filter: blur(50px);
 }
 .fog4 {
-  /* Ellipse 22 */
-
   position: absolute;
   width: 101.29px;
   height: 377.04px;
   left: 138.22px;
   top: 3532px;
-
   background: #edecff;
   filter: blur(50px);
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
@@ -314,13 +308,11 @@ span {
 }
 
 .project-info {
-
   position: static;
   width: 327px;
   height: 204px;
   left: 0px;
   top: 129px;
-
   font-family: Inter;
   font-style: normal;
   font-weight: normal;

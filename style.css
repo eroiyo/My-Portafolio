@@ -25,17 +25,13 @@ h1 {
   position: static;
   width: 327px;
   height: 55px;
-  left: 0px;
-  top: 0px;
   font-size: 48px;
   line-height: 72px;
-  margin-bottom: 0px;
   text-align: center;
   letter-spacing: 0.37px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Monospace";
   font-style: normal;
   font-weight: bold;
-  line-height: 72px;
   color: #7d73fc;
   flex: none;
   order: 0;
@@ -43,30 +39,27 @@ h1 {
 }
 
 .jhon-doe {
-  font-family: "Roboto";
+  font-family: "Roboto", "Monospace";
   font-style: normal;
   line-height: 16px;
   position: static;
   width: 81px;
   left: 12px;
   top: 10px;
-  color: #ffffff;
+  color: #fff;
   letter-spacing: 0.03em;
-  width: 81px;
   font-weight: 500;
   font-size: 18px;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
 }
 
 h2 {
-  font-family: Roboto;
+  font-family: "Roboto", "Monospace";
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -78,9 +71,7 @@ p {
   position: static;
   width: 327px;
   height: 170px;
-  left: 0px;
-  top: 0px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Monospace";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -90,7 +81,8 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px;
+  margin-bottom: 20px;
 }
 
 .circle {
@@ -98,7 +90,6 @@ p {
   width: 160px;
   height: 160px;
   left: -106px;
-  top: 0px;
   background: #edecff;
   filter: blur(50px);
 }
@@ -167,7 +158,6 @@ th {
 }
 
 #social-media {
-  position: relative;
   top: 0px;
   list-style-type: none;
   margin: 0;
@@ -186,4 +176,5 @@ li a {
   text-align: center;
   padding: 15px;
   text-decoration: none;
+
 }

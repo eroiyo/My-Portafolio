@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://eroiyo.github.io/My-Portafolio/)
+[Live Demo Link not avalible for the moment] 
 
 
 ## Getting Started

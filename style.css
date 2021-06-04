@@ -294,7 +294,6 @@ span {
   transition-duration: 0.4s;
   border: none;
   margin-bottom: 50px;
-  position: block;
   margin-top: 34px;
 }
 
@@ -315,9 +314,8 @@ span {
   position: static;
   width: 327px;
   height: 204px;
-  left: 0px;
   top: 129px;
-  font-family: Inter;
+  font-family: "Inter", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -326,6 +324,5 @@ span {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0px;
-  margin-bottom: 0px;
+  margin: 24px;
 }

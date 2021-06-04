@@ -127,7 +127,7 @@ p {
   height: 482.57px;
   left: 100px;
   top: 1224.71px;
-
+l
   background: #edecff;
   filter: blur(50px);
   transform: rotate(-36.38deg);
@@ -153,6 +153,7 @@ p {
   background: rgba(237, 236, 255, 0.3);
   filter: blur(50px);
 }
+
 .fog4 {
   position: absolute;
   width: 101.29px;
@@ -188,6 +189,7 @@ nav {
   height: 0.5px;
   margin-top: 15px;
 }
+
 .bar3 {
   margin-top: 70px;
   width: 327px;
@@ -252,7 +254,7 @@ li a {
 
 .work-title {
   text-align: left;
-  font-family: Roboto;
+  font-family: "Roboto", monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 42px;
@@ -281,6 +283,7 @@ span {
   margin-left: auto;
   margin-right: auto;
 }
+
 .button {
   position: absolute;
   left: 0;
@@ -295,6 +298,7 @@ span {
   position: block;
   margin-top: 34px;
 }
+
 .button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }

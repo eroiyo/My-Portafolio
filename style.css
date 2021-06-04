@@ -3,7 +3,7 @@ body {
   position: absolute;
   width: 386px;
   height: 4200px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 section {
@@ -21,6 +21,7 @@ section {
   background-color: #191765;
   margin: 0%;
 }
+
 .works {
   height: 3400px;
   box-sizing: border-box;
@@ -121,7 +122,6 @@ p {
 }
 
 .fog {
-  /* Ellipse 19 */
 
   position: absolute;
   width: 39.61px;
@@ -129,34 +129,30 @@ p {
   left: 100px;
   top: 1224.71px;
 
-  /* Theme 4 / Primary 4 */
   background: #edecff;
   filter: blur(50px);
   transform: rotate(-36.38deg);
 }
+
 .fog2 {
-  /* Ellipse 20 */
 
   position: absolute;
   width: 70.28px;
   height: 261.6px;
   left: 198px;
   top: 2137.23px;
-
-  /* Theme 4 / Primary 4 */
   background: #edecff;
   filter: blur(50px);
   transform: matrix(-0.84, -0.54, -0.54, 0.84, 0, 0);
 }
+
 .fog3 {
-  /* Ellipse 21 */
 
   position: absolute;
   width: 308px;
   height: 155px;
   left: -93px;
   top: 2974px;
-
   background: rgba(237, 236, 255, 0.3);
   filter: blur(50px);
 }
@@ -169,7 +165,6 @@ p {
   left: 138.22px;
   top: 3532px;
 
-  /* Theme 4 / Primary 4 */
   background: #edecff;
   filter: blur(50px);
   transform: matrix(-0.26, 0.97, 0.97, 0.26, 0, 0);
@@ -262,7 +257,6 @@ li a {
 }
 
 .work-title {
-  /* Text */
   text-align: left;
   font-family: Roboto;
   font-style: normal;
@@ -320,7 +314,6 @@ span {
 }
 
 .project-info {
-  /* Supporting Text */
 
   position: static;
   width: 327px;
@@ -328,18 +321,12 @@ span {
   left: 0px;
   top: 129px;
 
-  /* Theme 4 / Body Reguler 1 */
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  /* or 140% */
-
-  /* Theme 4 / Neutral 8 */
   color: #dcdce8;
-
-  /* Inside Auto Layout */
   flex: none;
   order: 1;
   flex-grow: 0;

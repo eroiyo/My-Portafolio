@@ -8,7 +8,7 @@ body {
   margin: 0;
   position: absolute;
   width: 386px;
-  height: 4590px;
+  height: 4600px;
   background-color: #fff;
 }
 
@@ -29,7 +29,7 @@ section {
 
 .works {
   display: flex;
-  height: 3790px;
+  height: 3800px;
   padding: 20px;
   background-size: 100% 100%;
   background-attachment: scroll;
@@ -187,7 +187,7 @@ li a {
   line-height: 30px;
   margin-right: auto;
   color: #9490ff;
-  margin-bottom: 0px;
+  margin-bottom: 1px;
 }
 
 .work-title2 {
@@ -199,13 +199,14 @@ li a {
   line-height: 30px;
   margin-right: auto;
   color: #9490ff;
+  margin-top: 10px;
 }
 
 .down_arrow {
   margin-bottom: 64px;
 }
 
-.project-card{
+.project-card {
   display: grid;
   grid-gap: 10px;
   margin-top: 25px;

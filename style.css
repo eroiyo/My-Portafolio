@@ -7,7 +7,6 @@ body {
 }
 
 section {
-  
   height: 800px;
   box-sizing: border-box;
   display: flex;
@@ -42,7 +41,7 @@ section {
 h1 {
   font-size: 40px;
   color: #9391ff;
-  font-family: "Roboto",monospace;
+  font-family: "Roboto", monospace;
   font-style: normal;
   font-weight: bold;
   text-align: center;
@@ -258,13 +257,13 @@ li a {
   line-height: 30px;
   margin-bottom: 0px;
   margin-right: auto;
-  color: #9490FF;
+  color: #9490ff;
 }
 .work-title2 {
   display: flex;
   justify-self: flex-start;
   width: 237px;
-  font-family: "Roboto",monospace;
+  font-family: "Roboto", monospace;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -272,7 +271,7 @@ li a {
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: auto;
-  color: #9490FF;
+  color: #9490ff;
 }
 
 .down_arrow {

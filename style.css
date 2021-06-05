@@ -2,7 +2,7 @@ body {
   margin: 0;
   position: absolute;
   width: 386px;
-  height: 4200px;
+  height: 4590px;
   background-color: #fff;
 }
 
@@ -23,7 +23,7 @@ section {
 }
 
 .works {
-  height: 3400px;
+  height: 3790px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -39,20 +39,12 @@ section {
 }
 
 h1 {
-  position: static;
-  width: 357px;
-  height: 55px;
-  font-size: 48px;
-  line-height: 72px;
-  text-align: center;
-  letter-spacing: 0.37px;
-  font-family: "Roboto", monospace;
+  font-size: 40px;
+  color: #9391ff;
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  color: #7d73fc;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  text-align: center;
 }
 
 .logo {
@@ -73,6 +65,8 @@ h1 {
 }
 
 h2 {
+  color: #dfe1e6;
+  text-align: center;
   font-family: "Roboto", monospace;
   font-style: normal;
   font-size: 32px;
@@ -81,7 +75,7 @@ h2 {
 }
 
 .project-title {
-  margin-top: 10px;
+  margin-top: 44px;
 }
 
 p {
@@ -165,6 +159,7 @@ p {
 }
 
 header {
+  margin-top: 40px;
   align-self: flex-start;
   width: 100%;
   display: flex;
@@ -190,7 +185,7 @@ nav {
 }
 
 .bar3 {
-  margin-top: 70px;
+  margin-top: 15px;
   width: 327px;
   height: 0.5px;
 }
@@ -252,14 +247,36 @@ li a {
 }
 
 .work-title {
-  text-align: left;
-  font-family: "Roboto", monospace;
+  display: flex;
+  justify-self: flex-start;
+  width: 237px;
+  height: px;
+  margin-left: 25px;
+  font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 54px;
-  color: #9390ff;
-  margin-left: 20px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: auto;
+  color: #9490FF;
+}
+.work-title2 {
+  display: flex;
+  justify-self: flex-start;
+  width: 237px;
+  height: px;
+  margin-left: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: auto;
+  color: #9490FF;
 }
 
 .down_arrow {
@@ -269,12 +286,15 @@ li a {
 .grid-container {
   display: grid;
   grid-gap: 10px;
-  margin-top: 120px;
+  margin-top: 25px;
 }
 
 .tags {
   display: flex;
   flex-direction: row;
+  margin-top: 44px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 span {
@@ -284,17 +304,19 @@ span {
 }
 
 .button {
-  position: absolute;
-  left: 0;
+  display: flex;
   background-color: #7d73fc;
   color: black;
-  padding: 16px 32px;
+  padding-top: 16px;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   transition-duration: 0.4s;
   border: none;
-  margin-bottom: 50px;
+  margin-left: 25px;
   margin-top: 34px;
+  margin-bottom: 40px;
+  width: 89px;
+  height: 48px;
 }
 
 .button:hover {

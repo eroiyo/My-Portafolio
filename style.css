@@ -1,8 +1,15 @@
+*{
+  font-family: "Roboto", monospace;
+  font-weight: 500;
+  text-align: center;
+  
+}
+
 body {
   margin: 0;
   position: absolute;
   width: 386px;
-  height: 4700px;
+  height: 4590px;
   background-color: #fff;
 }
 
@@ -12,7 +19,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  text-align: center;
   flex-direction: column;
   padding: 20px;
   margin: 0%;
@@ -23,16 +29,10 @@ section {
 }
 
 .works {
-  height: 3900px;
-  box-sizing: border-box;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  flex-direction: column;
+  height: 3790px;
   padding: 20px;
   background-size: 100% 100%;
-  background-repeat: no-repeat;
   background-attachment:scroll;
   margin: 0%;
   background-image: url(assest/bg.png);
@@ -41,14 +41,11 @@ section {
 h1 {
   font-size: 40px;
   color: #9391ff;
-  font-family: "Roboto", monospace;
   font-style: normal;
-  font-weight: bold;
   text-align: center;
 }
 
 .logo {
-  font-family: "Roboto", monospace;
   font-style: normal;
   line-height: 16px;
   position: static;
@@ -57,17 +54,13 @@ h1 {
   top: 10px;
   color: #fff;
   letter-spacing: 0.03em;
-  font-weight: 500;
   font-size: 18px;
   display: flex;
   align-items: center;
-  text-align: center;
 }
 
 h2 {
   color: #dfe1e6;
-  text-align: center;
-  font-family: "Roboto", monospace;
   font-style: normal;
   font-size: 32px;
   line-height: 44px;
@@ -81,12 +74,9 @@ p {
   position: static;
   width: 327px;
   height: 170px;
-  font-family: "Roboto", monospace;
   font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
   color: #c8c8d4;
   flex: none;
   order: 0;
@@ -128,16 +118,10 @@ nav {
 }
 
 th {
-  font-family: "Roboto", monospace;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 28px;
   color: #9390ff;
-}
-
-* {
-  font-family: "Roboto", monospace;
 }
 
 #link {
@@ -151,7 +135,6 @@ th {
   height: 24px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
@@ -167,7 +150,7 @@ th {
   color: white;
 }
 
-li {
+.social-li {
   float: left;
 }
 
@@ -175,10 +158,23 @@ td {
   color: #edecff;
 }
 
+li{
+  display: flex;
+}
+
+ul {
+  display: initial;
+  list-style-type: initial;
+  margin-block-start: initial;
+  margin-block-end: initial;
+  margin-inline-start: initial;
+  margin-inline-end: initial;
+  padding-inline-start: initial;
+}
+
 li a {
   display: block;
   color: white;
-  text-align: center;
   padding: 15px;
   text-decoration: none;
 }
@@ -187,33 +183,31 @@ li a {
   display: flex;
   justify-self: flex-start;
   width: 237px;
-  font-family: "Roboto", monospace;
   font-style: normal;
-  font-weight: 500;
   font-size: 40px;
   line-height: 30px;
   margin-right: auto;
   color: #9490ff;
+  margin-bottom: 0px;
 }
 
 .work-title2 {
   display: flex;
   justify-self: flex-start;
   width: 237px;
-  font-family: "Roboto", monospace;
   font-style: normal;
-  font-weight: 500;
   font-size: 40px;
   line-height: 30px;
   margin-right: auto;
   color: #9490ff;
+  margin-top: 0px;
 }
 
 .down_arrow {
   margin-bottom: 64px;
 }
 
-.grid-container {
+.project-card{
   display: grid;
   grid-gap: 10px;
   margin-top: 25px;
@@ -238,7 +232,6 @@ span {
   background-color: #7d73fc;
   color: black;
   padding-top: 16px;
-  text-align: center;
   font-size: 12px;
   transition-duration: 0.4s;
   border: none;
@@ -269,7 +262,6 @@ span {
   top: 129px;
   font-family: "Inter", monospace;
   font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   color: #dcdce8;

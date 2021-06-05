@@ -12,6 +12,13 @@ body {
   background-color: #fff;
 }
 
+img {
+  display: flex;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section {
   height: 800px;
   box-sizing: border-box;
@@ -203,7 +210,8 @@ li a {
 }
 
 .down_arrow {
-  margin-bottom: 64px;
+  margin-top: 48px;
+  margin-bottom: 12px;
 }
 
 .project-card {

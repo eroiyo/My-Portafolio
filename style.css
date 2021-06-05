@@ -239,6 +239,7 @@ span {
   margin-bottom: 40px;
   width: 89px;
   height: 48px;
+  line-height: 120%;
 }
 
 .button:hover {

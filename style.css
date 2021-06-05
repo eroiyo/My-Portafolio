@@ -41,7 +41,7 @@ section {
 h1 {
   font-size: 40px;
   color: #9391ff;
-  font-family: Roboto;
+  font-family: "Roboto",monospace;
   font-style: normal;
   font-weight: bold;
   text-align: center;
@@ -71,7 +71,6 @@ h2 {
   font-style: normal;
   font-size: 32px;
   line-height: 44px;
-  color: #edecff;
 }
 
 .project-title {
@@ -250,15 +249,14 @@ li a {
   display: flex;
   justify-self: flex-start;
   width: 237px;
-  height: px;
   margin-left: 25px;
-  font-family: Roboto;
+  font-family: "Roboto", monospace;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 30px;
   margin-bottom: 0px;
-  margin-left: 0px;
+  margin-left: 0px;8
   margin-right: auto;
   color: #9490FF;
 }
@@ -267,7 +265,6 @@ li a {
   justify-self: flex-start;
   width: 237px;
   height: px;
-  margin-left: 25px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;

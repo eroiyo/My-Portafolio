@@ -249,16 +249,16 @@ li a {
   display: flex;
   justify-self: flex-start;
   width: 237px;
-  margin-left: 0px;
   font-family: "Roboto", monospace;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 30px;
-  margin-bottom: 0px;
   margin-right: auto;
   color: #9490ff;
+  margin-bottom: 0px;;
 }
+
 .work-title2 {
   display: flex;
   justify-self: flex-start;
@@ -268,8 +268,7 @@ li a {
   font-weight: 500;
   font-size: 40px;
   line-height: 30px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  margin-bottom: 0px;;
   margin-right: auto;
   color: #9490ff;
 }

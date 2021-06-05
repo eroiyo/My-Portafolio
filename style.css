@@ -256,7 +256,7 @@ li a {
   font-size: 40px;
   line-height: 30px;
   margin-bottom: 0px;
-  margin-left: 0px;8
+  margin-left: 0px;
   margin-right: auto;
   color: #9490FF;
 }
@@ -289,7 +289,7 @@ li a {
 .tags {
   display: flex;
   flex-direction: row;
-  margin-top: 44px;
+  margin-top: 46px;
   margin-left: 5%;
   margin-right: 5%;
 }

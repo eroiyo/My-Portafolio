@@ -180,6 +180,14 @@ nav {
   color: white;
 }
 
+.social-media {
+  list-style-type: none;
+  margin-top: 0vw;
+  padding: 0;
+  display: inline-block;
+  color: white;
+}
+
 .social-li {
   float: left;
 }

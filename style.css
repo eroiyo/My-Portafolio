@@ -86,7 +86,7 @@ h2 {
 
 .thegrid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 1vw;
   width: 80vw;
   margin-left: auto;

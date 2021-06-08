@@ -19,7 +19,7 @@ img {
   max-width: 100%;
 }
 
-h4{
+h4 {
   margin-top: 1vh;
   color: white;
   font-size: 4vw;
@@ -52,7 +52,7 @@ section {
   display: flex;
   padding: 20px;
   margin-top: 18.77934272300469vw;
-  background-image:none;
+  background-image: none;
 }
 
 h1 {
@@ -87,22 +87,20 @@ h2 {
 
 .thegrid {
   display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: auto auto;
   grid-gap: 1vw;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
-  
 }
 .thegrid .head {
-  color:#9490FF;
+  color: #9490ff;
   font-size: 4vw;
 }
 .thegrid .cell {
-  color: #F5F5FF;
+  color: #f5f5ff;
   font-size: 4vw;
 }
-
 
 .project-title {
   margin-top: 44px;
@@ -155,7 +153,6 @@ nav {
   width: 100vw;
 }
 
-
 #link {
   position: relative;
   top: 176px;
@@ -184,7 +181,6 @@ nav {
 .social-li {
   float: left;
 }
-
 
 li {
   display: flex;
@@ -285,9 +281,19 @@ button:hover {
   background-color: #5e42d7;
 }
 
-.submit{
+.submit {
   margin-left: auto;
   margin-right: auto;
+}
+
+.submit:hover {
+  color: #fff;
+  background-color: #7d73fc;
+}
+
+.submit:active {
+  color: #eaeaf6;
+  background-color: #5e42d7;
 }
 
 .rectangle {
@@ -310,16 +316,15 @@ button:hover {
   margin-right: auto;
   margin-left: auto;
 }
-form{
+form {
   margin-top: 4vh;
 }
 input {
-  padding:2vh 22vw;
+  padding: 2vh 22vw;
   margin-top: 4vh;
 }
-textarea{
+textarea {
   width: 98%;
   margin-top: 4vh;
   height: 15vh;
 }
-

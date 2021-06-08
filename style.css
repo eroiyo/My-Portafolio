@@ -79,10 +79,9 @@ h1 {
 h2 {
   color: #dfe1e6;
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 8.6vw;
   line-height: 44px;
-  margin-top: 0px;
 }
 
 .thegrid {
@@ -93,6 +92,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+
 .thegrid .head {
   color: #9490ff;
   font-size: 4vw;
@@ -316,13 +316,16 @@ button:hover {
   margin-right: auto;
   margin-left: auto;
 }
+
 form {
   margin-top: 4vh;
 }
+
 input {
   padding: 2vh 22vw;
   margin-top: 4vh;
 }
+
 textarea {
   width: 98%;
   margin-top: 4vh;

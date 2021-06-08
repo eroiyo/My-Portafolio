@@ -8,7 +8,7 @@ body {
   margin: 0;
   position: absolute;
   width: 100vw;
-  background-color: #fff;
+  background-color: #191765;
 }
 
 img {
@@ -17,6 +17,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
+}
+
+h4 {
+  margin-top: 1vh;
+  color: white;
+  font-size: 4vw;
 }
 
 section {
@@ -45,8 +51,8 @@ section {
 .contact {
   display: flex;
   padding: 20px;
-  margin: 0%;
-  background-image:none;
+  margin-top: 18.77934272300469vw;
+  background-image: none;
 }
 
 h1 {
@@ -73,10 +79,9 @@ h1 {
 h2 {
   color: #dfe1e6;
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 8.6vw;
   line-height: 44px;
-  margin-top: 0px;
 }
 
 .thegrid {
@@ -86,19 +91,17 @@ h2 {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
-  
 }
-.thegrid .head, .thegrid .cell {
-}
+
 .thegrid .head {
-  color:#9490FF;
-  font-size: 4vw;
-}
-.thegrid .cell {
-  color: #F5F5FF;
+  color: #9490ff;
   font-size: 4vw;
 }
 
+.thegrid .cell {
+  color: #f5f5ff;
+  font-size: 4vw;
+}
 
 .project-title {
   margin-top: 44px;
@@ -108,7 +111,7 @@ p {
   position: static;
   width: 91.08635097493036vw;
   font-style: normal;
-  font-size: 4.571030640668524vw;
+  font-size: 5.571030640668524vw;
   line-height: 7.799442896935933vw;
   color: #c8c8d4;
   flex: none;
@@ -147,6 +150,10 @@ nav {
   width: 80vw;
 }
 
+.bar4 {
+  margin-top: 2.347417840375587vh;
+  width: 100vw;
+}
 
 #link {
   position: relative;
@@ -165,9 +172,16 @@ nav {
   margin-right: 20px;
 }
 
-#social-media {
+.social-media {
   list-style-type: none;
-  margin-top: 40px;
+  margin-top: 7vw;
+  padding: 0;
+  display: inline-block;
+  color: white;
+}
+
+.social-media2 {
+  list-style-type: none;
   padding: 0;
   display: inline-block;
   color: white;
@@ -176,7 +190,6 @@ nav {
 .social-li {
   float: left;
 }
-
 
 li {
   display: flex;
@@ -252,9 +265,10 @@ span {
   color: white;
   margin-left: auto;
   margin-right: auto;
+  font-size: 4vw;
 }
 
-.button {
+button {
   display: flex;
   background-color: #7d73fc;
   color: black;
@@ -262,18 +276,32 @@ span {
   font-size: 12px;
   transition-duration: 0.4s;
   border: none;
-  margin-left: 25px;
   margin-top: 34px;
   margin-bottom: 40px;
-  width: 89px;
-  height: 48px;
+  width: 30vw;
+  height: 7vh;
 }
 
-.button:hover {
+button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .button:focus {
+  background-color: #5e42d7;
+}
+
+.submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit:hover {
+  color: #fff;
+  background-color: #7d73fc;
+}
+
+.submit:active {
+  color: #eaeaf6;
   background-color: #5e42d7;
 }
 
@@ -296,4 +324,19 @@ span {
   flex-grow: 0;
   margin-right: auto;
   margin-left: auto;
+}
+
+form {
+  margin-top: 4vh;
+}
+
+input {
+  padding: 2vh 22vw;
+  margin-top: 4vh;
+}
+
+textarea {
+  width: 98%;
+  margin-top: 4vh;
+  height: 15vh;
 }

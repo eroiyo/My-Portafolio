@@ -8,7 +8,7 @@ body {
   margin: 0;
   position: absolute;
   width: 100vw;
-  background-color: #191765;
+  background-color: white;
 }
 
 img {
@@ -50,8 +50,7 @@ section {
 
 .contact {
   display: flex;
-  padding: 20px;
-  margin-top: 18.77934272300469vw;
+  padding-top: 0vw;
   background-image: none;
 }
 
@@ -60,7 +59,7 @@ h1 {
   color: #9391ff;
   font-style: normal;
   margin-bottom: 1.2vh;
-  margin-top:10vh;
+  margin-top:8vh;
 }
 
 .logo {
@@ -113,7 +112,9 @@ h2 {
 }
 
 .project-title {
-  margin-top: 44px;
+  margin-top: 6.875vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -149,6 +150,7 @@ nav {
   width: 80vw;
   margin-top: 9.389671361502347vh;
   margin-bottom: 2.347417840375587vh;
+  height: 0.5;
 }
 
 .bar2 {
@@ -159,10 +161,10 @@ nav {
 .bar3 {
   margin-top: 2.347417840375587vh;
   width: 80vw;
+  margin-bottom: 4vh;
 }
 
 .bar4 {
-  margin-top: 2.347417840375587vh;
   width: 100vw;
 }
 
@@ -174,10 +176,11 @@ nav {
 
 .social-media {
   list-style-type: none;
-  margin-top: 7vw;
   padding: 0;
   display: inline-block;
   color: white;
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -222,39 +225,70 @@ li a {
 .work-title {
   display: flex;
   justify-self: flex-start;
-  width: 237px;
+  width: 66.01671309192201vw;
   font-style: normal;
-  font-size: 40px;
-  line-height: 30px;
+  font-size: 11.1vw;
   margin-right: auto;
   color: #9490ff;
-  margin-bottom: 1px;
+  margin-bottom: 1.5vh;
 }
-
 .work-title2 {
   display: flex;
   justify-self: flex-start;
-  width: 237px;
+  width: 66.01671309192201vw;
   font-style: normal;
-  font-size: 40px;
-  line-height: 30px;
+  font-size: 11.1vw;
   margin-right: auto;
   color: #9490ff;
-  margin-top: 10px;
+  margin-top: 1.5vh;
 }
-
+.work-title3 {
+  visibility: hidden;
+  display: flex;
+  justify-self: flex-start;
+  width: 0px;
+  font-style: normal;
+  margin-right: auto;
+  color: #9490ff;
+  margin:0px,0px;
+  font-size: 0px;
+  height: 0px;
+}
+.down_arrow_a{
+  visibility: hidden;
+  width: 0px;
+  margin-right: 10vw;
+}
+.down_arrow_b{
+  visibility: hidden;
+  width: 0px;
+}
 .down_arrow {
-  margin-top: 48px;
+  margin-top: 4.026845637583892vw;
   margin-bottom: 12px;
+  width: 25vw;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  margin-top: 7vw;
+  width: 100%;
 }
 
-.project-card {
+.project-card,.project-card2 {
   display: grid;
   grid-gap: 10px;
   margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
   width: 100%;
+}
+
+.part-a,.part-b {
+  width: 100%;
+  height: 100%;
+  display: grid;
 }
 
 .tags {
@@ -356,4 +390,200 @@ textarea {
   text-align: start;
   border:none;
   font-size:4vw
+}
+footer{
+  background-color: #191765;
+}
+/* on desktop */
+@media screen and (min-width: 1024px) {
+  header {
+    visibility: hidden;
+  }
+  section {
+    background-image: url(assest/two_circles_desktop.png);
+  }
+  h1{
+    width: 70vw;
+    font-size: 90px;
+    margin-top: 3.408602150537634vw;
+  }
+  h2{
+    width: 70vw;
+    font-size: 3.910068426197458vw;
+  }
+  p{
+    width: 31.041666666666668vw;
+    font-size: 1.3888888888888888vw;
+    line-height: 2.684563758389262vw;
+  }
+  .bar{
+    margin-top: 2.7684563758389262vh;
+    width: 31.041666666666668vw;
+  }
+  .thegrid {
+    grid-template-columns: auto auto auto;
+    width: 31.041666666666668vw;
+    grid-gap: 0.39vw;
+  }
+  .thegrid .cell {
+    color: #f5f5ff;
+    font-size: 1.25vw;
+  }
+  .thegrid .head {
+    color: #f5f5ff;
+    font-size: 1.25vw;
+  }
+  .bar2 {
+    width: 31.041666666666668vw;
+    margin-top: 2.347417840375587vh;
+  }
+  .down_arrow_a{
+    visibility: visible;
+    width: 5vw;
+    margin-left: 5%;
+
+  }
+  .down_arrow_b{
+    visibility: visible;
+    width: 5vw;
+    margin-right: 5%;
+  }
+  .down_arrow{
+    visibility: hidden;
+    width: 0%;
+  }
+  .social-li {
+    width: 6vw;
+    font-size: 1.5vw;
+  }
+  li a{
+    padding: 0px;
+  }
+  .row{
+    margin-top:8.89261744966443vh;
+    width: 80%;
+  }
+  .work-title, .work-title2{
+    visibility: hidden;
+    margin:0px,0px;
+    visibility: hidden;
+    width: 0px;
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+  }
+  .work-title3{
+    visibility: visible;
+    display: flex;
+    justify-self: flex-start;
+    width: 80.833333333333336vw;
+    font-style: normal;
+    font-size: 5.5vw;
+    margin-right: auto;
+    color: #9490ff;
+    margin-bottom: 0.1vh;
+    height: 5.833333333333336vw;
+    margin-bottom: 2.546218487394958vw;
+    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bar3{
+    width: 80.27777777777779vw;
+  }
+  .placeholder{
+    max-width: 648px;
+    width: 100%;
+    height: 100%;
+  }
+  .project-card, .project-card2{
+    width: 80%;
+    grid-gap: 0px;
+    margin-top: 6.111111111111111vw;
+  }
+  .project-card{
+    grid-template-columns: 55% 45%;
+  }
+  .project-card2{
+    grid-template-columns: 45% 55%;
+  }
+  .part-a{
+    grid-row: 1;
+  }
+  .part-b{
+    grid-row: 0;
+  }
+  .project-title{
+    width: inherit;
+  }
+  .project-info{
+    width: 100%;
+    font-family: "Inter", monospace;
+    font-style: normal;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    color: #dcdce8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    margin-top: 0px;
+  }
+  span{
+    font-size:2.0416666666666667vw
+  }
+  button {
+    display: flex;
+    background-color: #7d73fc;
+    color: black;
+    transition-duration: 0.4s;
+    border: none;
+    margin-top: 0vw;
+    padding:1vw;
+    text-align: center;
+    margin-bottom: 0%;
+  }
+  .social-media2 {
+    display: inline-block;
+
+  }
+  h4{
+    display: inline-block;
+    font-size: 1vw;
+    margin-right: 0px;
+    margin-top: auto;
+    padding-bottom:1vh;
+    margin-bottom: 0px;
+  }
+  form {
+    width: 52.5%;
+  }
+  input{
+    font-size: 1.1543859649122806vw;
+    width: 100%;
+    height: 4.026845637583893vw;
+  }
+  .contact-title{
+    margin-top:20vw;
+  }
+  .contact-info{
+    width: 52.5%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1543859649122806vw;
+    margin-top: 1.2280701754385965vw;
+  }
+  textarea{
+    font-size:1.1543859649122806vw;
+  }
+  .submit{
+    padding: 2.5vw 5vw;
+    margin-top:6.180555555555555vw;
+    margin-bottom: 7.361111111111111vw;
+  }
+  .bar4{
+    margin-bottom: 3vw;
+  }
 }

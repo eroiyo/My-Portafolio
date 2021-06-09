@@ -59,16 +59,25 @@ h1 {
   font-size: 11.1vw;
   color: #9391ff;
   font-style: normal;
-  text-align: center;
   margin-bottom: 1.2vh;
+  margin-top:10vh;
 }
 
 .logo {
   font-style: normal;
   position: static;
-  width: 20%;
-  left: 12px;
-  top: 10px;
+  width: 100%;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.menu{
+  font-style: normal;
+  position: static;
+  width: 100%;
+  margin-right: 5%;
   color: #fff;
   letter-spacing: 0.03em;
   font-size: 18px;
@@ -127,6 +136,8 @@ header {
   width: 100%;
   display: flex;
   flex-direction: row;
+  height: 5vh;
+  position: fixed;
 }
 
 nav {
@@ -160,17 +171,6 @@ nav {
   top: 176px;
 }
 
-#connect {
-  position: static;
-  width: 130px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 
 .social-media {
   list-style-type: none;
@@ -179,6 +179,7 @@ nav {
   display: inline-block;
   color: white;
 }
+
 
 .social-media2 {
   list-style-type: none;
@@ -189,7 +190,10 @@ nav {
 
 .social-li {
   float: left;
+  width: 12vw;
+  font-size: 6vw
 }
+
 
 li {
   display: flex;
@@ -265,6 +269,8 @@ span {
   color: white;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 4vw;
 }
 
@@ -272,14 +278,12 @@ button {
   display: flex;
   background-color: #7d73fc;
   color: black;
-  padding-top: 16px;
-  font-size: 12px;
   transition-duration: 0.4s;
   border: none;
   margin-top: 34px;
   margin-bottom: 40px;
-  width: 30vw;
-  height: 7vh;
+  padding:5vw;
+  text-align: center;
 }
 
 button:hover {
@@ -316,8 +320,8 @@ button:hover {
   top: 129px;
   font-family: "Inter", monospace;
   font-style: normal;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 4vw;
+  line-height: 6vw;
   color: #dcdce8;
   flex: none;
   order: 1;
@@ -331,12 +335,25 @@ form {
 }
 
 input {
-  padding: 2vh 22vw;
+  text-align: start;
   margin-top: 4vh;
+  background-color: white;
+  color: #191765;
+  font-size:4vw;
+  width: 90vw;
+  height: 10vw;
+  border:none;
+  
 }
 
 textarea {
+  resize: none;
   width: 98%;
   margin-top: 4vh;
-  height: 15vh;
+  height: 20vh;
+  background-color: white;
+  color: #191765;
+  text-align: start;
+  border:none;
+  font-size:4vw
 }

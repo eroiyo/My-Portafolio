@@ -117,6 +117,7 @@ h2 {
   margin-right: auto;
 }
 
+
 p {
   position: static;
   width: 91.08635097493036vw;
@@ -399,8 +400,29 @@ footer{
   header {
     visibility: hidden;
   }
+  .circle{
+    position: absolute;
+    width: 15%;
+    height: 4.5%;
+    right: 90%;
+    top: 2.5%;
+
+    background: #EDECFF;
+    filter: blur(75px);
+}
+
+  .circle2{
+    position: absolute;
+    width: 10%;
+    height: 3.5%;
+    left: 90%;
+    top: 15%;
+    
+    background: #EDECFF;
+    filter: blur(75px);
+    }
   section {
-    background-image: url(assest/two_circles_desktop.png);
+    background-image: inherit;
   }
   h1{
     width: 70vw;
@@ -532,6 +554,9 @@ footer{
     margin-top: 0px;
   }
   span{
+    font-size:1.0416666666666667vw
+  }
+  .submit-text{
     font-size:2.0416666666666667vw
   }
   button {
@@ -585,5 +610,8 @@ footer{
   }
   .bar4{
     margin-bottom: 3vw;
+  }
+  .shape{
+    visibility: hidden;
   }
 }

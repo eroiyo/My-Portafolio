@@ -11,6 +11,11 @@ body {
   background-color: white;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
 img {
   display: flex;
   align-self: flex-start;
@@ -141,10 +146,11 @@ header {
   position: fixed;
 }
 
-nav {
-  margin-left: 65%;
-  margin-right: auto;
+nav{
+  display: flex;
+  width: 100%;
 }
+
 
 .bar {
   width: 80vw;
@@ -371,6 +377,10 @@ button:hover {
   margin-left: auto;
 }
 
+.portfolio-nav, .about-nav, .contact-nav, .vector-nav{
+  visibility: hidden;
+}
+
 form {
   margin-top: 4vh;
 }
@@ -404,9 +414,8 @@ footer {
 
 /* on desktop */
 @media screen and (min-width: 1024px) {
-  header {
-    visibility: hidden;
-  }
+
+  
 
   .circle {
     position: absolute;
@@ -646,4 +655,51 @@ footer {
   .shape {
     visibility: hidden;
   }
+
+  header {
+    margin-top: 0px;
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    position: fixed;
+  }
+
+  .portfolio-nav, .about-nav, .contact-nav, .vector-nav, .logo{
+    visibility: visible;
+    position: absolute;
+  }
+  .logo{
+    margin-left: 0%;
+    width: 10%;
+    margin-top: 1.5%;
+  }
+  
+  .portfolio-nav {
+    margin-left: 68%;
+    padding-top: 1%;
+  }
+
+  .about-nav {
+    margin-left: 75%;
+    padding-top: 1%;
+  }
+
+  .contact-nav {
+    margin-left: 80%;
+    padding-top: 1%;
+
+  }
+
+  .vector-nav {
+    margin-left: 85%;
+    width: 10%;
+    padding-top: 0%;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
 }

@@ -4,11 +4,12 @@
   text-align: center;
 }
 
+
 body {
   margin: 0;
   position: absolute;
   width: 100vw;
-  background-color: white;
+  background-color: #191765;
 }
 
 a {
@@ -16,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-img {
+img.placeholder {
   display: flex;
   align-self: flex-start;
   margin-left: auto;
@@ -69,24 +70,28 @@ h1 {
 .logo {
   font-style: normal;
   position: static;
-  width: 100%;
+  width: 40px;
+  height: 50px;
   color: #fff;
   letter-spacing: 0.03em;
   font-size: 18px;
   display: flex;
   align-items: center;
+  margin-left: 5%;
+  margin-right: auto;
 }
 
 .menu {
   font-style: normal;
   position: static;
-  width: 100%;
-  margin-right: 2vw;
+  width: 40px;
+  margin-right: 5%;
   color: #fff;
   letter-spacing: 0.03em;
+  height: 35px;
   font-size: 18px;
   display: flex;
-  align-items: center;
+  margin-top: 2.5%;
 }
 
 h2 {
@@ -138,15 +143,18 @@ p {
 }
 
 header {
+  position: fixed;
   align-self: flex-start;
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 5vh;
+  height: 48px;
   position: fixed;
+  top: 40px;
 }
 
 nav {
+  position: fixed;
   display: flex;
   width: 100%;
 }
@@ -244,11 +252,10 @@ li a {
   margin-top: 1.5vh;
 }
 
-.work-title3 {
+.work-title3, .circle, .circle2 {
   display: none;
   justify-self: flex-start;
   font-style: normal;
-  color: #9490ff;
 }
 
 .down_arrow_a {
@@ -375,7 +382,7 @@ button:hover {
 .about-nav,
 .contact-nav,
 .vector-nav {
-  visibility: hidden;
+  display: none;
 }
 
 form {
@@ -384,7 +391,7 @@ form {
 
 input {
   text-align: start;
-  margin-top: 4vh;
+  margin-top: 2vw;
   background-color: white;
   color: #191765;
   font-size: 4vw;
@@ -393,11 +400,14 @@ input {
   border: none;
 }
 
+input.last{
+  display: none;
+}
+
 textarea {
   resize: none;
-  width: 98%;
+  width: 95%;
   margin-top: 4vh;
-  height: 20vh;
   background-color: white;
   color: #191765;
   text-align: start;
@@ -412,23 +422,22 @@ footer {
 /* on desktop */
 @media screen and (min-width: 1024px) {
   .circle {
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-top: 15%;
+    width: 362px;
+    height: 362px;
+    display: flex;
     position: absolute;
-    width: 15%;
-    height: 4.5%;
-    right: 90%;
-    top: 2.5%;
-    background: #edecff;
-    filter: blur(75px);
   }
 
   .circle2 {
+    width: 362px;
+    height: 362px;
+    margin-top: 50%;
+    margin-left: 60%;
+    display: flex;
     position: absolute;
-    width: 10%;
-    height: 3.5%;
-    left: 90%;
-    top: 15%;
-    background: #edecff;
-    filter: blur(75px);
   }
 
   section {
@@ -438,7 +447,7 @@ footer {
   h1 {
     width: 1024px;
     font-size: 90px;
-    margin-top: 20.408602150537634vw;
+    margin-top: 186px;
   }
 
   h2 {
@@ -515,22 +524,23 @@ footer {
   .work-title3 {
     display: flex;
     justify-self: flex-start;
-    width: 444px;
+    width: 80%;
     font-style: normal;
     font-size: 64px;
     margin-right: auto;
     color: #9490ff;
     line-height: 114px;
-    height: 5.833333333333336vw;
-    margin-bottom: 129px;
     margin-left: 10%;
-    margin-left: auto;
+  }
+
+  .works {
+    margin-top: 232px;
   }
 
   .bar3 {
+    margin-top: 33px;
     width: 80.27777777777779vw;
   }
-
   .placeholder {
     width: 100%;
     height: 100%;
@@ -544,9 +554,12 @@ footer {
   .first{
     order:1;
   }
+  
+  .latest{
+    order:4;
+  }
 
   .part-a{
-    order: 2;
   }
 
   .project-card {
@@ -632,21 +645,48 @@ footer {
     width: 100%;
     height: 4.026845637583893vw;
   }
+  
+  input.name {
+    font-size: 1.1543859649122806vw;
+    width: 47.5%;
+    height: 4.026845637583893vw;
+    margin-left: 0%;
+    margin-right: auto;
+  }
+  input.last{
+    display: flex;
+    font-size: 1.1543859649122806vw;
+    width: 47.5%;
+    height: 4.026845637583893vw;
+    margin-right: 0%;
+  }
+  
+  .names{
+    display:flex;
+  }
 
   .contact-title {
-    margin-top: 20vw;
+    margin-top: 228px;
+    font-size: 40px;
+    width: 648px;
+    height: 56px;
+    line-height: 24px;
+    font-weight: 400;
   }
 
   .contact-info {
-    width: 52.5%;
+    width: 648px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.1543859649122806vw;
-    margin-top: 1.2280701754385965vw;
+    font-size: 20px;
+    line-height: 28px;
+    height: 61px;
+    margin-top: 16px;
   }
 
   textarea {
     font-size: 1.1543859649122806vw;
+    width: 100%;
   }
 
   .submit {
@@ -656,7 +696,7 @@ footer {
   }
 
   .bar4 {
-    margin-bottom: 3vw;
+    margin-bottom: 3px;
   }
 
   .shape {
@@ -677,13 +717,12 @@ footer {
   .contact-nav,
   .vector-nav,
   .logo {
-    visibility: visible;
+    display: flex;
     position: absolute;
   }
 
   .logo {
-    margin-left: 1vw;
-    width: 10vw;
+    margin-left: 100px;
     margin-top: 1.5%;
   }
 
@@ -709,6 +748,6 @@ footer {
   }
 
   .menu {
-    visibility: hidden;
+    display: none;
   }
 }

@@ -16,21 +16,23 @@
 </head>
 
 <body>
+  <header>
+    <nav>
+    <a href="#" class="logo"><img src="assest/logo.png" alt="logo"></a>
+    <div class="four">
+    <a href="#" class="portfolio-nav">Portfolio</a>
+    <a href="#" class="about-nav">About</a>
+    <a href="#" class="contact-nav">Contact</a>
+    <a href="#" class="vector-nav"><img src="assest/Vector.png" alt="mail"></a>
+  </div>
+    <a class="menu"><img src="assest/Union.png" alt=""></a>
+  </nav>
+  </header>
   <section>
-    <header>
-      <nav>
-      <a href="#" class="logo"><img src="assest/logo.png" alt="logo"></a>
-      <a href="#" class="portfolio-nav">Portfolio</a>
-      <a href="#" class="about-nav">About</a>
-      <a href="#" class="contact-nav">Contact</a>
-      <a href="#" class="vector-nav"><img src="assest/Vector.png" alt="mail"></a>
-      <a class="menu"><img src="assest/Union.png" alt=""></a>
-    </nav>
-    </header>
     <h1>Arturo Ortega</h1>
     <h2>Software Developer</h2>
-    <div class="circle"></div>
-    <div class="circle2"></div>
+    <img class="circle" src="assest/circle1.png">
+    <img class="circle2" src="assest/circle1.png">
     <p>I can help you build a product , feature or website Look through some of my work and experience! If you
       like
       what you see and have a project you need coded, don’t hestiate to contact me.
@@ -88,15 +90,16 @@
   <section class="works">
     <h2 class="work-title">MY RECENT</h2>
     <h2 class="work-title2">WORK</h2>
-    <h2 class="work-title3">MY RECENT WORK</h2>
+    <h2 class="work-title3">My recent work</h2>
     <img src="assest/bar3.png" alt="bar" class="bar3">
     <ul class="projects">
       <li>
         <div class="project-card">
-          <div class="part-a">
+          <div class="first"><div class="part-a">
             <img class="placeholder" src="assest/placeholder.png " alt="img">
           </div>
-           <div class="part-b">
+          </div>
+           <div class="latest"><div class="part-b">
               <h2 class="project-title">Multi-Post Stories</h2>
            
               <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups
@@ -117,12 +120,15 @@
             <button class="button" type="button"><span>See Project</span></button>
           </div>
         </div>
+        </div>
+      </div>
       </li>
       <li>
       <div class="project-card2">
-         <div class="part-a">
+         <div class="latest"><div class="part-a">
           <img class="placeholder" src="assest/placeholder.png " alt="img">
         </div>
+      </div>
         <div class="first"><div class="part-b">
             <h2 class="project-title">Multi-Post Stories</h2>
          
@@ -147,10 +153,12 @@
     </li>
     <li>
       <div class="project-card">
-        <div class="first"><div class="part-a">
+        <div class="first">
+       <div class="part-a">
           <img class="placeholder" src="assest/placeholder.png " alt="img">
-        </div></div>
-        <div class="first"><div class="part-b">
+        </div>
+      </div>
+        <div class="latest"><div class="part-b">
             <h2 class="project-title">Multi-Post Stories</h2>
          
             <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups
@@ -174,8 +182,9 @@
     </li>
     <li>
       <div class="project-card2">
-         <div class="part-a">
+         <div class="latest"><div class="part-a">
           <img class="placeholder" src="assest/placeholder.png " alt="img">
+        </div>
         </div>
         <div class="first"><div class="part-b">
             <h2 class="project-title">Multi-Post Stories</h2>
@@ -209,10 +218,10 @@
       needs coding. I’d love to help with it
     </p>
     <form action="https://formspree.io/f/xayajwqb" method="POST">
-      <input placeholder="Name..." type="text" name="name" maxlength="30" id="text" required />
-      <br>
+      <div class="names"><input placeholder="Name" class="name" type="text" name="name" maxlength="30" id="name" required />
+      <input placeholder="Last Name" class="last" type="text" name="last" maxlength="30" id="last" required />
+    </div>
       <input placeholder="exemple@email.com" type="email" class="email" id="email" name="email" required>
-      <br>
       <textarea name="textarea" id="textarea" cols="30" maxlength="500" rows="10" placeholder="Write your message here"
         required></textarea>
       <button class="submit" type="submit"><span class=submit-text>Send</span></button>

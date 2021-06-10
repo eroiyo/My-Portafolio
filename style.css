@@ -59,7 +59,7 @@ h1 {
   color: #9391ff;
   font-style: normal;
   margin-bottom: 1.2vh;
-  margin-top:8vh;
+  margin-top: 8vh;
 }
 
 .logo {
@@ -72,7 +72,7 @@ h1 {
   display: flex;
   align-items: center;
 }
-.menu{
+.menu {
   font-style: normal;
   position: static;
   width: 100%;
@@ -116,7 +116,6 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 p {
   position: static;
@@ -174,7 +173,6 @@ nav {
   top: 176px;
 }
 
-
 .social-media {
   list-style-type: none;
   padding: 0;
@@ -183,7 +181,6 @@ nav {
   display: flex;
   flex-direction: row;
 }
-
 
 .social-media2 {
   list-style-type: none;
@@ -195,9 +192,8 @@ nav {
 .social-li {
   float: left;
   width: 12vw;
-  font-size: 6vw
+  font-size: 6vw;
 }
-
 
 li {
   display: flex;
@@ -251,16 +247,16 @@ li a {
   font-style: normal;
   margin-right: auto;
   color: #9490ff;
-  margin:0px,0px;
+  margin: 0px, 0px;
   font-size: 0px;
   height: 0px;
 }
-.down_arrow_a{
+.down_arrow_a {
   visibility: hidden;
   width: 0px;
   margin-right: 10vw;
 }
-.down_arrow_b{
+.down_arrow_b {
   visibility: hidden;
   width: 0px;
 }
@@ -269,7 +265,7 @@ li a {
   margin-bottom: 12px;
   width: 25vw;
 }
-.row{
+.row {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -277,7 +273,8 @@ li a {
   width: 100%;
 }
 
-.project-card,.project-card2 {
+.project-card,
+.project-card2 {
   display: grid;
   grid-gap: 10px;
   margin-top: 25px;
@@ -286,7 +283,8 @@ li a {
   width: 100%;
 }
 
-.part-a,.part-b {
+.part-a,
+.part-b {
   width: 100%;
   height: 100%;
   display: grid;
@@ -317,7 +315,7 @@ button {
   border: none;
   margin-top: 34px;
   margin-bottom: 40px;
-  padding:5vw;
+  padding: 5vw;
   text-align: center;
 }
 
@@ -374,11 +372,10 @@ input {
   margin-top: 4vh;
   background-color: white;
   color: #191765;
-  font-size:4vw;
+  font-size: 4vw;
   width: 90vw;
   height: 10vw;
-  border:none;
-  
+  border: none;
 }
 
 textarea {
@@ -389,10 +386,10 @@ textarea {
   background-color: white;
   color: #191765;
   text-align: start;
-  border:none;
-  font-size:4vw
+  border: none;
+  font-size: 4vw;
 }
-footer{
+footer {
   background-color: #191765;
 }
 /* on desktop */
@@ -400,45 +397,45 @@ footer{
   header {
     visibility: hidden;
   }
-  .circle{
+  .circle {
     position: absolute;
     width: 15%;
     height: 4.5%;
     right: 90%;
     top: 2.5%;
 
-    background: #EDECFF;
+    background: #edecff;
     filter: blur(75px);
-}
+  }
 
-  .circle2{
+  .circle2 {
     position: absolute;
     width: 10%;
     height: 3.5%;
     left: 90%;
     top: 15%;
-    
-    background: #EDECFF;
+
+    background: #edecff;
     filter: blur(75px);
-    }
+  }
   section {
     background-image: inherit;
   }
-  h1{
+  h1 {
     width: 70vw;
     font-size: 90px;
     margin-top: 3.408602150537634vw;
   }
-  h2{
+  h2 {
     width: 70vw;
     font-size: 3.910068426197458vw;
   }
-  p{
+  p {
     width: 31.041666666666668vw;
     font-size: 1.3888888888888888vw;
     line-height: 2.684563758389262vw;
   }
-  .bar{
+  .bar {
     margin-top: 2.7684563758389262vh;
     width: 31.041666666666668vw;
   }
@@ -459,18 +456,17 @@ footer{
     width: 31.041666666666668vw;
     margin-top: 2.347417840375587vh;
   }
-  .down_arrow_a{
+  .down_arrow_a {
     visibility: visible;
     width: 5vw;
     margin-left: 5%;
-
   }
-  .down_arrow_b{
+  .down_arrow_b {
     visibility: visible;
     width: 5vw;
     margin-right: 5%;
   }
-  .down_arrow{
+  .down_arrow {
     visibility: hidden;
     width: 0%;
   }
@@ -478,23 +474,24 @@ footer{
     width: 6vw;
     font-size: 1.5vw;
   }
-  li a{
+  li a {
     padding: 0px;
   }
-  .row{
-    margin-top:8.89261744966443vh;
+  .row {
+    margin-top: 8.89261744966443vh;
     width: 80%;
   }
-  .work-title, .work-title2{
+  .work-title,
+  .work-title2 {
     visibility: hidden;
-    margin:0px,0px;
+    margin: 0px, 0px;
     visibility: hidden;
     width: 0px;
     font-size: 0px;
     width: 0px;
     height: 0px;
   }
-  .work-title3{
+  .work-title3 {
     visibility: visible;
     display: flex;
     justify-self: flex-start;
@@ -510,35 +507,36 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
-  .bar3{
+  .bar3 {
     width: 80.27777777777779vw;
   }
-  .placeholder{
+  .placeholder {
     max-width: 648px;
     width: 100%;
     height: 100%;
   }
-  .project-card, .project-card2{
+  .project-card,
+  .project-card2 {
     width: 80%;
     grid-gap: 0px;
     margin-top: 6.111111111111111vw;
   }
-  .project-card{
+  .project-card {
     grid-template-columns: 55% 45%;
   }
-  .project-card2{
+  .project-card2 {
     grid-template-columns: 45% 55%;
   }
-  .part-a{
+  .part-a {
     grid-row: 1;
   }
-  .part-b{
+  .part-b {
     grid-row: 0;
   }
-  .project-title{
+  .project-title {
     width: inherit;
   }
-  .project-info{
+  .project-info {
     width: 100%;
     font-family: "Inter", monospace;
     font-style: normal;
@@ -553,11 +551,11 @@ footer{
     height: 100%;
     margin-top: 0px;
   }
-  span{
-    font-size:1.0416666666666667vw
+  span {
+    font-size: 1.0416666666666667vw;
   }
-  .submit-text{
-    font-size:2.0416666666666667vw
+  .submit-text {
+    font-size: 2.0416666666666667vw;
   }
   button {
     display: flex;
@@ -566,52 +564,54 @@ footer{
     transition-duration: 0.4s;
     border: none;
     margin-top: 0vw;
-    padding:1vw;
+    padding: 1vw;
     text-align: center;
     margin-bottom: 0%;
   }
   .social-media2 {
     display: inline-block;
-
   }
-  h4{
+  h4 {
     display: inline-block;
     font-size: 1vw;
     margin-right: 0px;
     margin-top: auto;
-    padding-bottom:1vh;
+    padding-bottom: 1vh;
     margin-bottom: 0px;
   }
   form {
     width: 52.5%;
   }
-  input{
+  input {
     font-size: 1.1543859649122806vw;
     width: 100%;
     height: 4.026845637583893vw;
   }
-  .contact-title{
-    margin-top:20vw;
+  .contact-title {
+    margin-top: 20vw;
   }
-  .contact-info{
+  .contact-info {
     width: 52.5%;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.1543859649122806vw;
     margin-top: 1.2280701754385965vw;
   }
-  textarea{
-    font-size:1.1543859649122806vw;
+  textarea {
+    font-size: 1.1543859649122806vw;
   }
-  .submit{
+  .submit {
     padding: 2.5vw 5vw;
-    margin-top:6.180555555555555vw;
+    margin-top: 6.180555555555555vw;
     margin-bottom: 7.361111111111111vw;
   }
-  .bar4{
+
+  .bar4 {
     margin-bottom: 3vw;
   }
-  .shape{
+
+  .shape {
     visibility: hidden;
   }
 }
+

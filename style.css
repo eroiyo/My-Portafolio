@@ -141,7 +141,6 @@ p {
 }
 
 header {
-  position: fixed;
   align-self: flex-start;
   width: 100%;
   display: flex;
@@ -454,10 +453,11 @@ footer {
     width: 1024px;
     font-size: 40px;
   }
+
   p {
     width: 447px;
     height: 155px;
-    font-family: "Roboto";
+    font-family: "Roboto", monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -551,15 +551,13 @@ footer {
     width: 80%;
     margin-top: 6.111111111111111vw;
   }
+
   .first {
     order: 1;
   }
 
   .latest {
     order: 4;
-  }
-
-  .part-a {
   }
 
   .project-card {
@@ -575,8 +573,6 @@ footer {
     text-align: start;
     width: 100%;
     font-size: 2vw;
-    margin-right: none;
-    margin-left: none;
     line-height: 3vw;
     height: 10%;
   }
@@ -594,6 +590,7 @@ footer {
     flex-grow: 0;
     height: 40%;
   }
+
   .tags {
     display: flex;
     flex-direction: row;
@@ -602,6 +599,7 @@ footer {
     margin-right: auto;
     margin-bottom: 10%;
   }
+
   button {
     display: flex;
     background-color: #7d73fc;
@@ -610,7 +608,6 @@ footer {
     border: none;
     padding: 1.3888888888888888vw;
     text-align: center;
-    margin-bottom: 0px;
     height: 10%;
     width: 40%;
   }
@@ -652,6 +649,7 @@ footer {
     margin-left: 0%;
     margin-right: auto;
   }
+
   input.last {
     display: flex;
     font-size: 1.1543859649122806vw;

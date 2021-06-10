@@ -251,7 +251,7 @@ li a {
   width: 0.000000000000000000000000001px;
   font-style: normal;
   color: #9490ff;
-  margin: 0.00000000000000000000001px, 0.000000000000000001px;
+  margin: 0.00000000001px, 0.00000000001px;
   font-size: 0.000000000000000000000000001px;
   height: 0.000000000000000000000000001px;
 }
@@ -443,7 +443,7 @@ footer {
   h1 {
     width: 70vw;
     font-size: 90px;
-    margin-top: 3.408602150537634vw;
+    margin-top: 20.408602150537634vw;
   }
 
   h2 {
@@ -475,7 +475,7 @@ footer {
 
   .thegrid .head {
     font-size: 1.25vw;
-    margin-bottom: 1.75;
+    margin-bottom: 1.75vw;
   }
 
   .bar2 {
@@ -606,6 +606,7 @@ footer {
 
   .social-media2 {
     display: inline-block;
+    margin-bottom: -1.2vw;
   }
 
   h4 {
@@ -656,7 +657,6 @@ footer {
   }
 
   header {
-    margin-top: 0px;
     align-self: flex-start;
     width: 100%;
     display: flex;
@@ -673,6 +673,7 @@ footer {
     visibility: visible;
     position: absolute;
   }
+
   .logo {
     margin-left: 0%;
     width: 10%;

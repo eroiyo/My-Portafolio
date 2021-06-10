@@ -67,7 +67,7 @@ h1 {
 }
 
 .logo {
-  font-style: normal;
+  font-style: absolute;
   position: static;
   width: 100%;
   color: #fff;
@@ -534,6 +534,14 @@ footer {
   .placeholder {
     width: 100%;
     height: 100%;
+    transition: 0.4s;
+  }
+  
+  .project-card .placeholder:hover{
+    box-shadow: -5px 5px 5px 5px lightblue;
+  }
+  .project-card2 .placeholder:hover{
+    box-shadow: 5px -5px 5px 5px lightblue;
   }
 
   .project-card,

@@ -327,7 +327,7 @@ button {
   border: none;
   text-align: center;
   padding: 2vw;
-  margin-top: 6%;
+  margin-top: 34px;
   margin-bottom: 40px;
   width: 30vw;
   height: 15vw;
@@ -611,6 +611,7 @@ footer {
     text-align: center;
     height: 10%;
     width: 40%;
+    margin-top: 6%;
   }
 
   span {

@@ -250,20 +250,20 @@ li a {
   font-style: normal;
   margin-right: auto;
   color: #9490ff;
-  margin: 0px, 0px;
+  margin: 0.000000000000000000000000001px, 0.000000000000000000000000001px;
   font-size: 0px;
-  height: 0px;
+  height: 0.000000000000000000000000001px;
 }
 
 .down_arrow_a {
   visibility: hidden;
-  width: 0px;
+  width: 0.0000000000000000000000000001px;
   margin-right: 10vw;
 }
 
 .down_arrow_b {
   visibility: hidden;
-  width: 0px;
+  width: 000000000000000000000000000.1px;
 }
 
 .down_arrow {
@@ -413,7 +413,6 @@ footer {
     height: 4.5%;
     right: 90%;
     top: 2.5%;
-
     background: #edecff;
     filter: blur(75px);
   }
@@ -424,7 +423,6 @@ footer {
     height: 3.5%;
     left: 90%;
     top: 15%;
-
     background: #edecff;
     filter: blur(75px);
   }
@@ -498,10 +496,6 @@ footer {
     font-size: 1.5vw;
   }
 
-  li a {
-    padding: 0px;
-  }
-
   .row {
     margin-top: 8.89261744966443vh;
     width: 80%;
@@ -510,12 +504,10 @@ footer {
   .work-title,
   .work-title2 {
     visibility: hidden;
-    margin: 0px, 0px;
-    visibility: hidden;
-    width: 0px;
+    width:0.000000000000000000000000001px;
+    height: 0.000000000000000000000000001px;
+    margin:0.000000000000000000000000001px;
     font-size: 0px;
-    width: 0px;
-    height: 0px;
   }
 
   .work-title3 {
@@ -527,12 +519,10 @@ footer {
     font-size: 5.5vw;
     margin-right: auto;
     color: #9490ff;
-    margin-bottom: 0.1vh;
     height: 5.833333333333336vw;
     margin-bottom: 2.546218487394958vw;
     margin-left: 10%;
     margin-left: auto;
-    margin-right: auto;
   }
 
   .bar3 {
@@ -548,7 +538,6 @@ footer {
   .project-card,
   .project-card2 {
     width: 80%;
-    grid-gap: 0px;
     margin-top: 6.111111111111111vw;
   }
 
@@ -585,7 +574,6 @@ footer {
     margin-right: auto;
     margin-left: auto;
     height: 100%;
-    margin-top: 0px;
   }
 
   span {
@@ -602,7 +590,6 @@ footer {
     color: black;
     transition-duration: 0.4s;
     border: none;
-    margin-top: 0vw;
     padding: 1vw;
     text-align: center;
     margin-bottom: 0%;

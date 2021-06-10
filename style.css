@@ -4,7 +4,6 @@
   text-align: center;
 }
 
-
 body {
   margin: 0;
   position: absolute;
@@ -127,7 +126,6 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 p {
   position: static;
@@ -252,7 +250,9 @@ li a {
   margin-top: 1.5vh;
 }
 
-.work-title3, .circle, .circle2 {
+.work-title3,
+.circle,
+.circle2 {
   display: none;
   justify-self: flex-start;
   font-style: normal;
@@ -264,7 +264,7 @@ li a {
 }
 
 .down_arrow_b {
-  display:none;
+  display: none;
 }
 
 .down_arrow {
@@ -294,7 +294,7 @@ li a {
 .part-b {
   display: flex;
   flex-direction: column;
-  order:3;
+  order: 3;
 }
 
 .part-a {
@@ -400,7 +400,7 @@ input {
   border: none;
 }
 
-input.last{
+input.last {
   display: none;
 }
 
@@ -455,13 +455,13 @@ footer {
     font-size: 40px;
   }
   p {
-    width: 447px; 
+    width: 447px;
     height: 155px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 32px
+    line-height: 32px;
   }
 
   .bar {
@@ -503,7 +503,7 @@ footer {
   }
 
   .down_arrow {
-    display:none;
+    display: none;
   }
 
   .social-li {
@@ -551,15 +551,15 @@ footer {
     width: 80%;
     margin-top: 6.111111111111111vw;
   }
-  .first{
-    order:1;
-  }
-  
-  .latest{
-    order:4;
+  .first {
+    order: 1;
   }
 
-  .part-a{
+  .latest {
+    order: 4;
+  }
+
+  .part-a {
   }
 
   .project-card {
@@ -578,22 +578,21 @@ footer {
     margin-right: none;
     margin-left: none;
     line-height: 3vw;
-    height:10%;
+    height: 10%;
   }
 
   .project-info {
     text-align: start;
     width: 100%;
-    margin-top:10%;
+    margin-top: 10%;
     font-family: "Inter", monospace;
     font-style: normal;
     font-size: 1.3888888888888888vw;
-    line-height:  1.9444444444444444vw;
+    line-height: 1.9444444444444444vw;
     color: #dcdce8;
     flex: none;
     flex-grow: 0;
     height: 40%;
-    
   }
   .tags {
     display: flex;
@@ -645,7 +644,7 @@ footer {
     width: 100%;
     height: 4.026845637583893vw;
   }
-  
+
   input.name {
     font-size: 1.1543859649122806vw;
     width: 47.5%;
@@ -653,16 +652,16 @@ footer {
     margin-left: 0%;
     margin-right: auto;
   }
-  input.last{
+  input.last {
     display: flex;
     font-size: 1.1543859649122806vw;
     width: 47.5%;
     height: 4.026845637583893vw;
     margin-right: 0%;
   }
-  
-  .names{
-    display:flex;
+
+  .names {
+    display: flex;
   }
 
   .contact-title {

@@ -436,19 +436,23 @@ footer {
   }
 
   h1 {
-    width: 70vw;
+    width: 1024px;
     font-size: 90px;
     margin-top: 20.408602150537634vw;
   }
 
   h2 {
-    width: 70vw;
-    font-size: 3.910068426197458vw;
+    width: 1024px;
+    font-size: 40px;
   }
   p {
-    width: 31.041666666666668vw;
-    font-size: 1.3888888888888888vw;
-    line-height: 2.684563758389262vw;
+    width: 447px; 
+    height: 155px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px
   }
 
   .bar {
@@ -511,13 +515,14 @@ footer {
   .work-title3 {
     display: flex;
     justify-self: flex-start;
-    width: 80.833333333333336vw;
+    width: 444px;
     font-style: normal;
-    font-size: 5.5vw;
+    font-size: 64px;
     margin-right: auto;
     color: #9490ff;
+    line-height: 114px;
     height: 5.833333333333336vw;
-    margin-bottom: 2.546218487394958vw;
+    margin-bottom: 129px;
     margin-left: 10%;
     margin-left: auto;
   }

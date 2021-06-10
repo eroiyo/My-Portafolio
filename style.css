@@ -286,9 +286,14 @@ li a {
   width: 100%;
 }
 
-.part-a,
 .part-b {
   width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.part-a {
+  width: 90%;
   height: 100%;
   display: grid;
 }
@@ -456,13 +461,13 @@ footer {
   }
 
   .thegrid .cell {
-    color: #f5f5ff;
     font-size: 1.25vw;
+    margin-bottom: 1.25vw;
   }
 
   .thegrid .head {
-    color: #f5f5ff;
     font-size: 1.25vw;
+    margin-bottom: 1.75;
   }
 
   .bar2 {

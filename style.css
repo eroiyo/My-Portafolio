@@ -72,6 +72,7 @@ h1 {
   display: flex;
   align-items: center;
 }
+
 .menu {
   font-style: normal;
   position: static;
@@ -229,6 +230,7 @@ li a {
   color: #9490ff;
   margin-bottom: 1.5vh;
 }
+
 .work-title2 {
   display: flex;
   justify-self: flex-start;
@@ -239,6 +241,7 @@ li a {
   color: #9490ff;
   margin-top: 1.5vh;
 }
+
 .work-title3 {
   visibility: hidden;
   display: flex;
@@ -251,20 +254,24 @@ li a {
   font-size: 0px;
   height: 0px;
 }
+
 .down_arrow_a {
   visibility: hidden;
   width: 0px;
   margin-right: 10vw;
 }
+
 .down_arrow_b {
   visibility: hidden;
   width: 0px;
 }
+
 .down_arrow {
   margin-top: 4.026845637583892vw;
   margin-bottom: 12px;
   width: 25vw;
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -389,14 +396,17 @@ textarea {
   border: none;
   font-size: 4vw;
 }
+
 footer {
   background-color: #191765;
 }
+
 /* on desktop */
 @media screen and (min-width: 1024px) {
   header {
     visibility: hidden;
   }
+
   .circle {
     position: absolute;
     width: 15%;
@@ -418,69 +428,85 @@ footer {
     background: #edecff;
     filter: blur(75px);
   }
+
   section {
     background-image: inherit;
   }
+
   h1 {
     width: 70vw;
     font-size: 90px;
     margin-top: 3.408602150537634vw;
   }
+
   h2 {
     width: 70vw;
     font-size: 3.910068426197458vw;
   }
+
   p {
     width: 31.041666666666668vw;
     font-size: 1.3888888888888888vw;
     line-height: 2.684563758389262vw;
   }
+
   .bar {
     margin-top: 2.7684563758389262vh;
     width: 31.041666666666668vw;
   }
+
   .thegrid {
     grid-template-columns: auto auto auto;
     width: 31.041666666666668vw;
     grid-gap: 0.39vw;
   }
+
   .thegrid .cell {
     color: #f5f5ff;
     font-size: 1.25vw;
   }
+
   .thegrid .head {
     color: #f5f5ff;
     font-size: 1.25vw;
   }
+
   .bar2 {
     width: 31.041666666666668vw;
     margin-top: 2.347417840375587vh;
   }
+
   .down_arrow_a {
     visibility: visible;
     width: 5vw;
     margin-left: 5%;
   }
+
   .down_arrow_b {
     visibility: visible;
     width: 5vw;
     margin-right: 5%;
   }
+
   .down_arrow {
     visibility: hidden;
     width: 0%;
   }
+
   .social-li {
     width: 6vw;
     font-size: 1.5vw;
   }
+
   li a {
     padding: 0px;
   }
+
   .row {
     margin-top: 8.89261744966443vh;
     width: 80%;
   }
+
   .work-title,
   .work-title2 {
     visibility: hidden;
@@ -491,6 +517,7 @@ footer {
     width: 0px;
     height: 0px;
   }
+
   .work-title3 {
     visibility: visible;
     display: flex;
@@ -507,35 +534,44 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
   .bar3 {
     width: 80.27777777777779vw;
   }
+
   .placeholder {
     max-width: 648px;
     width: 100%;
     height: 100%;
   }
+
   .project-card,
   .project-card2 {
     width: 80%;
     grid-gap: 0px;
     margin-top: 6.111111111111111vw;
   }
+
   .project-card {
     grid-template-columns: 55% 45%;
   }
+
   .project-card2 {
     grid-template-columns: 45% 55%;
   }
+
   .part-a {
     grid-row: 1;
   }
+
   .part-b {
     grid-row: 0;
   }
+
   .project-title {
     width: inherit;
   }
+
   .project-info {
     width: 100%;
     font-family: "Inter", monospace;
@@ -551,12 +587,15 @@ footer {
     height: 100%;
     margin-top: 0px;
   }
+
   span {
     font-size: 1.0416666666666667vw;
   }
+
   .submit-text {
     font-size: 2.0416666666666667vw;
   }
+
   button {
     display: flex;
     background-color: #7d73fc;
@@ -568,28 +607,32 @@ footer {
     text-align: center;
     margin-bottom: 0%;
   }
+
   .social-media2 {
     display: inline-block;
   }
+
   h4 {
     display: inline-block;
     font-size: 1vw;
-    margin-right: 0px;
     margin-top: auto;
     padding-bottom: 1vh;
-    margin-bottom: 0px;
   }
+
   form {
     width: 52.5%;
   }
+
   input {
     font-size: 1.1543859649122806vw;
     width: 100%;
     height: 4.026845637583893vw;
   }
+
   .contact-title {
     margin-top: 20vw;
   }
+
   .contact-info {
     width: 52.5%;
     margin-left: auto;
@@ -597,9 +640,11 @@ footer {
     font-size: 1.1543859649122806vw;
     margin-top: 1.2280701754385965vw;
   }
+
   textarea {
     font-size: 1.1543859649122806vw;
   }
+
   .submit {
     padding: 2.5vw 5vw;
     margin-top: 6.180555555555555vw;
@@ -614,4 +659,3 @@ footer {
     visibility: hidden;
   }
 }
-

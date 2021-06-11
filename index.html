@@ -9,19 +9,30 @@
   <link crossorigin="anonymous" rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <link crossorigin="anonymous" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
     rel="stylesheet" />
   <title>Arturo Ortega Portafolio</title>
 </head>
 
 <body>
-  <section>
-    <header>
+  <header>
+    <nav>
       <a href="#" class="logo"><img src="assest/logo.png" alt="logo"></a>
-      <nav class="menu"><img src="assest/Union.png" alt=""></nav>
-    </header>
+      <div class="four">
+        <a href="#" class="portfolio-nav">Portfolio</a>
+        <a href="#" class="about-nav">About</a>
+        <a href="#" class="contact-nav">Contact</a>
+        <a href="#" class="vector-nav"><img src="assest/Vector.png" alt="mail"></a>
+      </div>
+      <a class="menu"><img src="assest/Union.png" alt=""></a>
+    </nav>
+  </header>
+  <section>
     <h1>Arturo Ortega</h1>
     <h2>Software Developer</h2>
+    <img class="circle" src="assest/circle1.png" alt="cirlce">
+    <img class="circle2" src="assest/circle1.png" alt="cirlce">
     <p>I can help you build a product , feature or website Look through some of my work and experience! If you
       like
       what you see and have a project you need coded, don’t hestiate to contact me.
@@ -48,157 +59,182 @@
       <div class="cell">Terminal</div>
     </div>
     <img src="assest/bar.png" alt="bar" class="bar2">
-    <ul class="social-media">
-      <li class="social-li">
-        <a href="#"><i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="social-li">
-        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="social-li">
-        <a href="#"><i class="fa fa-angellist" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="social-li">
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li class="social-li">
-        <a href="#"><i class="fa fa-medium" aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
+    <div class="row">
+      <img src="assest/element_right.png" class="down_arrow_a" alt="">
+      <ul class="social-media">
+        <li class="social-li">
+          <a href="#"><i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-li">
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-li">
+          <a href="#"><i class="fa fa-angellist" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-li">
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="social-li">
+          <a href="#"><i class="fa fa-medium" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <img src="assest/element_right.png" class="down_arrow_b" alt="">
+    </div>
+    <img src="assest/element_right.png" class="down_arrow" alt="">
   </section>
   <section class="works">
-    <img src="assest/element_right.png" class="down_arrow" alt="">
-    <h1 class="work-title">MY RECENT</h1>
-    <h1 class="work-title2">WORK</h1>
+    <h2 class="work-title">MY RECENT</h2>
+    <h2 class="work-title2">WORK</h2>
+    <h2 class="work-title3">My recent work</h2>
     <img src="assest/bar3.png" alt="bar" class="bar3">
-    <ul>
+    <ul class="projects">
       <li>
         <div class="project-card">
-          <div class="grid-item"><img src="assest/placeholder.png " alt="img"></div>
-          <div class="grid-item">
-            <h2 class="project-title">Multi-Post Stories</h2>
-          </div>
-          <div class="grid-item">
-            <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has
-              been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-          </div>
-          <div class="grid-item">
-            <div class="tags">
-              <span>Css</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Html</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Bootstrap</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Ruby</span>
+          <div class="first">
+            <div class="part-a">
+              <img class="placeholder" src="assest/placeholder.png " alt="img">
             </div>
           </div>
-          <div class="grid-item"><button class="button" type="button"><span>See Project</span></button></div>
+          <div class="latest">
+            <div class="part-b">
+              <h2 class="project-title">Multi-Post Stories</h2>
+
+              <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups
+                required.
+                has
+                been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+              </p>
+              <div class="tags">
+                <span>Css</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Html</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Bootstrap</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Ruby</span>
+              </div>
+              <button class="button" type="button"><span>See Project</span></button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="project-card2">
+          <div class="latest">
+            <div class="part-a">
+              <img class="placeholder" src="assest/placeholder.png " alt="img">
+            </div>
+          </div>
+          <div class="first">
+            <div class="part-b">
+              <h2 class="project-title">Multi-Post Stories</h2>
+
+              <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups
+                required.
+                has
+                been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+              </p>
+              <div class="tags">
+                <span>Css</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Html</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Bootstrap</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Ruby</span>
+              </div>
+              <button class="button" type="button"><span>See Project</span></button>
+            </div>
+          </div>
         </div>
       </li>
       <li>
         <div class="project-card">
-          <div class="grid-item"><img src="assest/placeholder.png " alt="img"></div>
-          <div class="grid-item">
-            <h2 class="project-title">Multi-Post Stories</h2>
-          </div>
-          <div class="grid-item">
-            <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups required.
-              has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-          </div>
-          <div class="grid-item">
-            <div class="tags">
-              <span>Css</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Html</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Bootstrap</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Ruby</span>
+          <div class="first">
+            <div class="part-a">
+              <img class="placeholder" src="assest/placeholder.png " alt="img">
             </div>
           </div>
-          <div class="grid-item"><button class="button" type="button"><span>See Project</span></button></div>
+          <div class="latest">
+            <div class="part-b">
+              <h2 class="project-title">Multi-Post Stories</h2>
+
+              <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups
+                required.
+                has
+                been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+              </p>
+              <div class="tags">
+                <span>Css</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Html</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Bootstrap</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Ruby</span>
+              </div>
+            </div>
+            <button class="button" type="button"><span>See Project</span></button>
+          </div>
         </div>
       </li>
       <li>
-        <div class="project-card">
-          <div class="grid-item"><img src="assest/placeholder.png " alt="img"></div>
-          <div class="grid-item">
-            <h2 class="project-title">Multi-Post Stories</h2>
-          </div>
-          <div class="grid-item">
-            <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups
-              required. has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy
-              text.
-            </p>
-          </div>
-          <div class="grid-item">
-            <div class="tags">
-              <span>Css</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Html</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Bootstrap</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Ruby</span>
+        <div class="project-card2">
+          <div class="latest">
+            <div class="part-a">
+              <img class="placeholder" src="assest/placeholder.png " alt="img">
             </div>
           </div>
-          <div class="grid-item"><button class="button" type="button"><span>See Project</span></button></div>
-        </div>
-      </li>
-      <li>
-        <div class="project-card">
-          <div class="grid-item"><img src="assest/placeholder.png " alt="img"></div>
-          <div class="grid-item">
-            <h2 class="project-title">Multi-Post Stories</h2>
-          </div>
-          <div class="grid-item">
-            <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups
-              required. has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy
-              text.
-            </p>
-          </div>
-          <div class="grid-item">
-            <div class="tags">
-              <span>Css</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Html</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Bootstrap</span>
-              <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
-              <span>Ruby</span>
+          <div class="first">
+            <div class="part-b">
+              <h2 class="project-title">Multi-Post Stories</h2>
+
+              <p class="project-info">A daily selection of privately personalized reads; no accounts or sign-ups
+                required.
+                has
+                been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+              </p>
+              <div class="tags">
+                <span>Css</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Html</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Bootstrap</span>
+                <img class="rectangle" src="assest/Rectangle.png" alt="Rectangle">
+                <span>Ruby</span>
+              </div>
+              <button class="button" type="button"><span>See Project</span></button>
             </div>
           </div>
-          <div class="grid-item"><button class="button" type="button"><span>See Project</span></button></div>
         </div>
       </li>
     </ul>
+
   </section>
   <section class="contact">
-    <h1>Contact us</h1>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project that
+    <h1 class="contact-title">Contact us</h1>
+    <p class="contact-info">If you have an application you are interested in developing, a feature that you need built
+      or a project that
       needs coding. I’d love to help with it
     </p>
     <form action="https://formspree.io/f/xayajwqb" method="POST">
-      <input placeholder="Name..." type="text" name="name" maxlength="30" id="text" required />
-      <br>
+      <div class="names"><input placeholder="Name" class="name" type="text" name="name" maxlength="30" id="name"
+          required />
+        <input placeholder="Last Name" class="last" type="text" name="last" maxlength="30" id="last" required />
+      </div>
       <input placeholder="exemple@email.com" type="email" class="email" id="email" name="email" required>
-      <br>
       <textarea name="textarea" id="textarea" cols="30" maxlength="500" rows="10" placeholder="Write your message here"
         required></textarea>
-      <button class="submit" type="submit"><span>Submit</span></button>
+      <button class="submit" type="submit"><span class=submit-text>Send</span></button>
     </form>
   </section>
   <footer>

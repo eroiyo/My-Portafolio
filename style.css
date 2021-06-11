@@ -64,7 +64,7 @@ h1 {
   color: #9391ff;
   font-style: normal;
   margin-bottom: 1.2vh;
-  margin-top: 8vh;
+  margin-top: 24vw;
 }
 
 .logo {
@@ -105,8 +105,8 @@ h2 {
 .thegrid {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 1vw;
-  width: 80vw;
+  grid-gap: 2vw;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -130,10 +130,11 @@ h2 {
 
 p {
   position: static;
-  width: 91.08635097493036vw;
+  width: 76.08635097493036vw;
   font-weight: 400;
   font-style: normal;
-  font-size: 5.571030640668524vw;
+  font-size: 4vw;
+  line-height: 6vw;
   line-height: 7.799442896935933vw;
   color: #c8c8d4;
   flex: none;
@@ -365,6 +366,7 @@ button:hover {
 }
 
 .project-info {
+  text-align: start;
   position: static;
   width: 100%;
   top: 129px;
@@ -473,8 +475,8 @@ footer {
 
   .thegrid {
     grid-template-columns: auto auto auto;
-    width: 31.041666666666668vw;
-    grid-gap: 0.39vw;
+    width: 35.041666666666668vw;
+    grid-gap: 1vw;
   }
 
   .thegrid .cell {
@@ -581,7 +583,6 @@ footer {
   }
 
   .project-info {
-    text-align: start;
     width: 100%;
     margin-top: 5px;
     font-family: "Inter", monospace;

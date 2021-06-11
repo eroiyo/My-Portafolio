@@ -723,11 +723,8 @@ footer {
   .logo {
     display: flex;
     position: absolute;
-  }
-
-  .logo {
     margin-left: 100px;
-    margin-bottom: 3%;
+    height: 40px;
   }
 
   .portfolio-nav {

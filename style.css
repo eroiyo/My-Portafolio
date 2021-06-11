@@ -9,6 +9,7 @@ body {
   position: absolute;
   width: 100vw;
   background-color: #191765;
+  overflow-x: hidden;
 }
 
 a {
@@ -621,6 +622,10 @@ footer {
   .submit-text {
     font-size: 2.0416666666666667vw;
   }
+  
+  .social-media{
+    margin-right: 18%;
+  }
 
   .social-media2 {
     display: inline-block;
@@ -722,7 +727,7 @@ footer {
 
   .logo {
     margin-left: 100px;
-    margin-top: 1.5%;
+    margin-bottom: 3%;
   }
 
   .portfolio-nav {

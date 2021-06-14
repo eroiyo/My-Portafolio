@@ -22,7 +22,7 @@ Download it from this repository, and double click into index.html
 
 👤 **Author1**
 
-- GitHub: [@eroiyo](https://github.com/eroiyo)
+- GitHub: [@eroiyo](https://eroiyo.github.io/My-Portafolio/)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/carlos-arturo-ortega-guanipa-39a1a5204/)
 
 ## 🤝 Contributing

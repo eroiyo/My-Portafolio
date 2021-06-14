@@ -16,14 +16,24 @@
 
 To get a local copy up and running follow these simple example steps.
 
-Download it from this repository, and double click into index.html
+### Prerequisites
+
+Any web browser (Google Chrome, Firefox, Microsoft Edge, etc.)
+
+### Setup
+
+Unzip the files and leave them all in the same folder
 
 ## Authors
 
-👤 **Author1**
+👤 **Arturo Ortega**
 
-- GitHub: [@eroiyo](https://github.com/eroiyo)
+- GitHub: [@eroiyo](https://eroiyo.github.io/My-Portafolio/)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/carlos-arturo-ortega-guanipa-39a1a5204/)
+
+### Usage
+
+Run Index.html using any navigator, you can read all the information of the page
 
 ## 🤝 Contributing
 

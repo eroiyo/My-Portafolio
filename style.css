@@ -337,12 +337,12 @@ button {
   font-size: 12px;
 }
 
-button:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
 .button:focus {
   background-color: #5e42d7;
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .submit {

@@ -719,11 +719,13 @@ footer {
 
   header {
     align-self: flex-start;
+    background-color: #191765;
     width: 100%;
     display: flex;
     flex-direction: row;
     height: 48px;
     position: fixed;
+    z-index: 2;
   }
 
   .portfolio-nav,

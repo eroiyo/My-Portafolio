@@ -46,7 +46,7 @@ section {
   background-size: cover;
 }
 
-.works {
+#works {
   display: flex;
   padding: 20px;
   background-size: 100% 100%;
@@ -54,7 +54,7 @@ section {
   background-image: url(assest/bg.png);
 }
 
-.contact {
+#contact {
   display: flex;
   background-image: none;
 }
@@ -324,7 +324,7 @@ span {
 
 button {
   display: flex;
-  background-color: #7d73fc;
+  background-color: #7D73FC;
   color: black;
   transition-duration: 0.4s;
   border: none;
@@ -343,6 +343,7 @@ button {
 
 button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #7D73FC;
 }
 
 .submit {
@@ -545,7 +546,7 @@ footer {
     margin-left: 10%;
   }
 
-  .works {
+  #works {
     margin-top: 232px;
   }
 
@@ -644,7 +645,7 @@ footer {
 
   h4 {
     display: inline-block;
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-top: auto;
     padding-bottom: 1vh;
   }

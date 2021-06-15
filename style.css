@@ -150,7 +150,7 @@ header {
   flex-direction: row;
   height: 48px;
   position: fixed;
-  top: 40px;
+  padding-top: 40px;
 }
 
 nav {
@@ -422,6 +422,14 @@ footer {
   background-color: #191765;
 }
 
+.contact-title {
+  font-size: 11.1vw;
+  color: #9391ff;
+  font-style: normal;
+  margin-bottom: 1.2vh;
+  margin-top: 24vw;
+}
+
 /* on desktop */
 @media screen and (min-width: 1024px) {
   .circle {
@@ -672,6 +680,7 @@ footer {
   }
 
   .contact-title {
+    
     margin-top: 228px;
     font-size: 40px;
     width: 648px;
@@ -714,7 +723,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 48px;
     position: fixed;
   }
 
@@ -727,6 +736,11 @@ footer {
     position: absolute;
     margin-left: 100px;
     height: 40px;
+  }
+
+  .nav img{
+    width: 5.4vw;
+    height: 1vw;
   }
 
   .portfolio-nav {
@@ -752,5 +766,15 @@ footer {
 
   .menu {
     display: none;
+  }
+  .four{
+    font-size: 1vw;
+  }
+
+  header {
+    flex-direction: row;
+    height: 48px;
+    position: fixed;
+    padding-top: 5px;
   }
 }

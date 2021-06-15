@@ -705,7 +705,7 @@ footer {
   }
 
   .submit {
-    padding: 2.5vw 5vw;
+    padding: 2vw 4.5vw;
     margin-top: 6.180555555555555vw;
     margin-bottom: 7.361111111111111vw;
   }
@@ -762,7 +762,8 @@ footer {
 
   .vector-nav {
     margin-left: 85%;
-    width: 10%;
+    width: 2vw;
+    height: 2w;
     padding-top: 0%;
   }
 

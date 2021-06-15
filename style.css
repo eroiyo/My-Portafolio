@@ -324,7 +324,7 @@ span {
 
 button {
   display: flex;
-  background-color: #7D73FC;
+  background-color: 7d73fc;
   color: black;
   transition-duration: 0.4s;
   border: none;
@@ -343,7 +343,7 @@ button {
 
 button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  background-color: #7D73FC;
+  background-color: #7d73fc;
 }
 
 .submit {

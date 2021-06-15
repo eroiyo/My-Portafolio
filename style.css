@@ -46,7 +46,7 @@ section {
   background-size: cover;
 }
 
-.works {
+#works {
   display: flex;
   padding: 20px;
   background-size: 100% 100%;
@@ -54,7 +54,7 @@ section {
   background-image: url(assest/bg.png);
 }
 
-.contact {
+#contact {
   display: flex;
   background-image: none;
 }
@@ -150,7 +150,7 @@ header {
   flex-direction: row;
   height: 48px;
   position: fixed;
-  top: 40px;
+  padding-top: 5px;
 }
 
 nav {
@@ -343,6 +343,7 @@ button {
 
 button:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #7d73fc;
 }
 
 .submit {
@@ -420,6 +421,14 @@ textarea {
 
 footer {
   background-color: #191765;
+}
+
+.contact-title {
+  font-size: 11.1vw;
+  color: #9391ff;
+  font-style: normal;
+  margin-bottom: 1.2vh;
+  margin-top: 24vw;
 }
 
 /* on desktop */
@@ -537,7 +546,7 @@ footer {
     margin-left: 10%;
   }
 
-  .works {
+  #works {
     margin-top: 232px;
   }
 
@@ -587,7 +596,7 @@ footer {
     margin-top: 5px;
     font-family: "Inter", monospace;
     font-style: normal;
-    font-size: 1.3888888888888888vw;
+    font-size: 1.3888888888888887vw;
     line-height: 1.9444444444444444vw;
     color: #dcdce8;
     flex: none;
@@ -636,7 +645,7 @@ footer {
 
   h4 {
     display: inline-block;
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-top: auto;
     padding-bottom: 1vh;
   }
@@ -696,7 +705,7 @@ footer {
   }
 
   .submit {
-    padding: 2.5vw 5vw;
+    padding: 2vw 4.5vw;
     margin-top: 6.180555555555555vw;
     margin-bottom: 7.361111111111111vw;
   }
@@ -711,11 +720,13 @@ footer {
 
   header {
     align-self: flex-start;
+    background-color: #191765;
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 48px;
     position: fixed;
+    z-index: 2;
   }
 
   .portfolio-nav,
@@ -727,6 +738,11 @@ footer {
     position: absolute;
     margin-left: 100px;
     height: 40px;
+  }
+
+  .nav img {
+    width: 5.4vw;
+    height: 1vw;
   }
 
   .portfolio-nav {
@@ -746,11 +762,16 @@ footer {
 
   .vector-nav {
     margin-left: 85%;
-    width: 10%;
+    width: 2vw;
+    height: 2w;
     padding-top: 0%;
   }
 
   .menu {
     display: none;
+  }
+
+  .four {
+    font-size: 1vw;
   }
 }

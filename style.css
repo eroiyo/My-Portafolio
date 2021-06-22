@@ -69,8 +69,8 @@ h1 {
 .logo {
   font-style: normal;
   position: static;
-  width: 40px;
-  height: 35px;
+  width: 2vh;
+  height: 1vh;
   color: #fff;
   letter-spacing: 0.03em;
   font-size: 18px;
@@ -80,7 +80,7 @@ h1 {
   margin-right: auto;
   margin-bottom: auto;
   margin-right: auto;
-  margin-top: 0.25vh;
+  margin-top: 2.5vh;
 }
 
 .hidden{

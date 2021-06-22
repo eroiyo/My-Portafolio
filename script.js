@@ -8,11 +8,13 @@ function clickFunction() {
     para.classList.toggle('rotate-icon');
     if (nav2.style.display != 'flex') {
         nav2.style.display = 'flex'
-        logo.style.display = 'hidden';
+        logo.classList.remove('not-hidden')
+        logo.classList.add('hidden');
 
     } else {
         nav2.style.display = 'none';
-        logo.style.display = 'inline-block';
+        logo.classList.add('not-hidden')
+        logo.classList.remove('hidden');
     }
 }
 

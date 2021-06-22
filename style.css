@@ -45,7 +45,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #works {
   display: flex;
   padding: 20px;
@@ -81,6 +80,14 @@ h1 {
   margin-right: auto;
   margin-bottom: auto;
   margin-right: auto;
+}
+
+.hidden{
+  visibility: hidden !important; 
+}
+.not-hidden{
+  display: flex;
+  display: flex !important;
 }
 
 .menu {

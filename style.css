@@ -79,19 +79,18 @@ h1 {
   align-items: center;
   margin-left: 5%;
   margin-right: auto;
-  margin-top: 5px;
+  margin-bottom: auto;
+  margin-right: auto;
 }
 
 .menu {
   font-style: normal;
   position: static;
-  width: 30px;
   margin-right: 5%;
   color: #fff;
   letter-spacing: 0.03em;
   font-size: 10px;
   display: flex;
-  margin-top: 5px;
 }
 
 #toggle-icon {
@@ -100,10 +99,11 @@ h1 {
 }
 .hbar1, .hbar2, .hbar3 {
   background-color: #fff;
-  width: 35px;
-  height: 4px;
+  width: 5.47645125958379vh;
+  height: 0.6258801439524331vh;
   transition: 0.5s;
-  margin: 7px 0;
+  margin-top: 1.09375vh;
+  margin-bottom: 1.09375vh;
   border-radius: 2px;
 }
 .rotate-icon .hbar1 {
@@ -183,6 +183,7 @@ nav {
   position: fixed;
   display: flex;
   width: 100%;
+  height: 7vh;
 }
 
 .secondary-nav {
@@ -805,6 +806,12 @@ footer {
     position: absolute;
     margin-left: 100px;
     height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .logo {
+    margin-top: 0.25%;
   }
 
   .nav img {
@@ -830,7 +837,7 @@ footer {
   .vector-nav {
     margin-left: 85%;
     width: 2vw;
-    padding-top: 0%;
+    padding-top: 0.25%;
   }
 
   .menu {

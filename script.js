@@ -18,10 +18,10 @@ function clickFunction() {
 
 function phone(screenSize) {
     if (screenSize.matches) {
-        if (nav2.style.display == 'flex') {
+        if (nav2.style.display === 'flex') {
             clickFunction();
         }
-    } else {}
+    }
 }
 phone(screenSize);
 screenSize.addListener(phone);

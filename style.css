@@ -78,7 +78,6 @@ h1 {
   display: flex;
   align-items: center;
   margin-left: 5%;
-  margin-right: auto;
   margin-bottom: auto;
   margin-right: auto;
   margin-top: 2.5vh;
@@ -90,7 +89,6 @@ h1 {
 
 .not-hidden {
   display: flex;
-  display: flex !important;
 }
 
 .menu {
@@ -527,6 +525,7 @@ footer {
     display: flex;
     position: absolute;
   }
+
   .circle2 {
     width: 362px;
     height: 362px;
@@ -535,18 +534,22 @@ footer {
     display: flex;
     position: absolute;
   }
+
   section {
     background-image: inherit;
   }
+
   h1 {
     width: 1024px;
     font-size: 90px;
     margin-top: 186px;
   }
+
   h2 {
     width: 1024px;
     font-size: 40px;
   }
+
   p {
     width: 447px;
     height: 155px;
@@ -556,52 +559,64 @@ footer {
     font-size: 20px;
     line-height: 32px;
   }
+
   .bar {
     margin-top: 2.7684563758389262vh;
     width: 31.041666666666668vw;
   }
+
   .thegrid {
     grid-template-columns: auto auto auto;
     width: 35.041666666666668vw;
     grid-gap: 1vw;
   }
+
   .thegrid .cell {
     font-size: 1.25vw;
     margin-bottom: 1.25vw;
   }
+
   .thegrid .head {
     font-size: 1.25vw;
     margin-bottom: 1.75vw;
   }
+
   .bar2 {
     width: 31.041666666666668vw;
     margin-top: 2.347417840375587vh;
   }
+
   .down_arrow_a {
     display: flex;
     width: 5vw;
     margin-left: 5%;
   }
+
   .down_arrow_b {
     display: flex;
     width: 5vw;
     margin-right: 5%;
   }
+
   .down_arrow {
     display: none;
   }
+
   .social-li {
     width: 6vw;
     font-size: 1.5vw;
   }
+
   .row {
     margin-top: 8.89261744966443vh;
     width: 80%;
   }
+
   .work-title,
   .work-title2 {
     display: none;
   }
+
   .work-title3 {
     display: flex;
     justify-self: flex-start;
@@ -613,34 +628,43 @@ footer {
     line-height: 114px;
     margin-left: 10%;
   }
+
   #works {
     margin-top: 232px;
   }
+
   .bar3 {
     margin-top: 33px;
     width: 80.27777777777779vw;
   }
+
   .placeholder {
     width: 100%;
     height: 100%;
   }
+
   .project-card,
   .project-card2 {
     width: 80%;
     margin-top: 6.111111111111111vw;
   }
+
   .first {
     order: 1;
   }
+
   .latest {
     order: 4;
   }
+
   .project-card {
     grid-template-columns: 60% 40%;
   }
+
   .project-card2 {
     grid-template-columns: 40% 60%;
   }
+
   .project-title {
     margin-top: 2.323420074349442vw;
     text-align: start;
@@ -649,6 +673,7 @@ footer {
     line-height: 3vw;
     height: 10%;
   }
+
   .project-info {
     width: 100%;
     margin-top: 5px;
@@ -661,6 +686,7 @@ footer {
     flex-grow: 0;
     height: 40%;
   }
+
   .tags {
     display: flex;
     flex-direction: row;
@@ -669,6 +695,7 @@ footer {
     margin-right: auto;
     margin-bottom: 10%;
   }
+
   button {
     display: flex;
     background-color: #7d73fc;
@@ -681,33 +708,41 @@ footer {
     width: 40%;
     margin-top: 6%;
   }
+
   span {
     font-size: 1.0416666666666667vw;
   }
+
   .submit-text {
     font-size: 2.0416666666666667vw;
   }
+
   .social-media {
     margin-right: 18%;
   }
+
   .social-media2 {
     display: inline-block;
     margin-bottom: -1.2vw;
   }
+
   h4 {
     display: inline-block;
     font-size: 1.5vw;
     margin-top: auto;
     padding-bottom: 1vh;
   }
+
   form {
     width: 52.5%;
   }
+
   input {
     font-size: 1.1543859649122806vw;
     width: 100%;
     height: 4.026845637583893vw;
   }
+
   input.name {
     font-size: 1.1543859649122806vw;
     width: 47.5%;
@@ -715,6 +750,7 @@ footer {
     margin-left: 0%;
     margin-right: auto;
   }
+
   input.last {
     display: flex;
     font-size: 1.1543859649122806vw;
@@ -722,9 +758,11 @@ footer {
     height: 4.026845637583893vw;
     margin-right: 0%;
   }
+
   .names {
     display: flex;
   }
+
   .contact-title {
     margin-top: 228px;
     font-size: 40px;
@@ -733,6 +771,7 @@ footer {
     line-height: 24px;
     font-weight: 400;
   }
+
   .contact-info {
     width: 648px;
     margin-left: auto;
@@ -742,21 +781,26 @@ footer {
     height: 61px;
     margin-top: 16px;
   }
+
   textarea {
     font-size: 1.1543859649122806vw;
     width: 100%;
   }
+
   .submit {
     padding: 2vw 4.5vw;
     margin-top: 6.180555555555555vw;
     margin-bottom: 7.361111111111111vw;
   }
+
   .bar4 {
     margin-bottom: 3px;
   }
+
   .shape {
     display: none;
   }
+
   header {
     align-self: flex-start;
     background-color: #191765;
@@ -767,6 +811,7 @@ footer {
     position: fixed;
     z-index: 2;
   }
+
   .portfolio-nav,
   .about-nav,
   .contact-nav,
@@ -779,33 +824,41 @@ footer {
     margin-top: auto;
     margin-bottom: auto;
   }
+
   .logo {
     margin-top: 0.25%;
   }
+
   .nav img {
     width: 5.4vw;
     height: 1vw;
   }
+
   .portfolio-nav {
     margin-left: 68%;
     padding-top: 1%;
   }
+
   .about-nav {
     margin-left: 75%;
     padding-top: 1%;
   }
+
   .contact-nav {
     margin-left: 80%;
     padding-top: 1%;
   }
+
   .vector-nav {
     margin-left: 85%;
     width: 2vw;
     padding-top: 0.25%;
   }
+
   .menu {
     display: none;
   }
+
   .four {
     font-size: 1vw;
   }

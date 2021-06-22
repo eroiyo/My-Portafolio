@@ -3,15 +3,15 @@ const screenSize = window.matchMedia('(min-width: 1024px)');
 const logo = document.querySelector('.logo');
 
 function clickFunction() {
-    const para = document.getElementById('toggle-icon');
-    para.classList.toggle('rotate-icon');
-    if (nav2.style.display != 'flex') {
-    nav2.style.display = 'flex'
-    logo.classList.remove('not-hidden')
+  const para = document.getElementById('toggle-icon');
+  para.classList.toggle('rotate-icon');
+  if (nav2.style.display !== 'flex') {
+    nav2.style.display = 'flex';
+    logo.classList.remove('not-hidden');
     logo.classList.add('hidden');
-    } else {
+  } else {
     nav2.style.display = 'none';
-    logo.classList.add('not-hidden')
+    logo.classList.add('not-hidden');
     logo.classList.remove('hidden');
   }
 }

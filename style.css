@@ -79,19 +79,43 @@ h1 {
   align-items: center;
   margin-left: 5%;
   margin-right: auto;
+  margin-top: 5px;
 }
 
 .menu {
   font-style: normal;
   position: static;
-  width: 40px;
+  width: 30px;
   margin-right: 5%;
   color: #fff;
   letter-spacing: 0.03em;
-  height: 17.5px;
-  font-size: 18px;
+  font-size: 10px;
   display: flex;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+
+#toggle-icon {
+  cursor: pointer;
+  display: table;
+}
+.hbar1, .hbar2, .hbar3 {
+  background-color: #fff;
+  width: 35px;
+  height: 4px;
+  transition: 0.5s;
+  margin: 7px 0;
+  border-radius: 2px;
+}
+.rotate-icon .hbar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+.rotate-icon .hbar2 {
+  opacity: 0;
+}
+.rotate-icon .hbar3 {
+  -webkit-transform: rotate(42deg) translate(-9px, -8px);
+  transform: rotate(42deg) translate(-9px, -8px);
 }
 
 h2 {
@@ -144,19 +168,62 @@ p {
 }
 
 header {
+  background-color: #191765;
   align-self: flex-start;
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 48px;
+  height: 7vh;
   position: fixed;
-  padding-top: 5px;
+  margin-top: 0px;
+  z-index: 2;
 }
 
 nav {
   position: fixed;
   display: flex;
   width: 100%;
+}
+
+.secondary-nav {
+  position: fixed;
+  display: none;
+  width: 100%;
+  margin-top:7vh;
+  height: 93vh;
+  flex-direction: column;
+  z-index: 2;
+  background-color: #191765;
+  background-image: url(assest/nav2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.nav2-text{
+  width: 50px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.nav2-element{
+margin-bottom: 18px;
+margin-left:40px;
+margin-right:52px;
+display: flex;
+flex-direction: row;
+}
+
+.nav2-arrow{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 80%;
+  color: #7D73FC;
+  font-size: 30px;
+}
+
+.nav2-first{
+  margin-top: 4vh;
 }
 
 .bar {

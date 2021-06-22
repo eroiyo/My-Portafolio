@@ -80,6 +80,7 @@ h1 {
   margin-right: auto;
   margin-bottom: auto;
   margin-right: auto;
+  margin-top: 0.25vh;
 }
 
 .hidden{
@@ -114,15 +115,15 @@ h1 {
   border-radius: 2px;
 }
 .rotate-icon .hbar1 {
-  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
-  transform: rotate(-45deg) translate(-8px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-1.25vh, 0.9375vh);
+  transform: rotate(-45deg) translate(-1.25vh, 0.9375vh);
 }
 .rotate-icon .hbar2 {
   opacity: 0;
 }
 .rotate-icon .hbar3 {
-  -webkit-transform: rotate(42deg) translate(-9px, -8px);
-  transform: rotate(42deg) translate(-9px, -8px);
+  -webkit-transform: rotate(42deg) translate(-1.40625vh, -1.25vh);
+  transform: rotate(42deg) translate(-1.40625vh, -1.25vh);
 }
 
 h2 {

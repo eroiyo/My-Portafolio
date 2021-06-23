@@ -1,3 +1,4 @@
+import data from './data.js';
 function Project(id,title, overview, description, big_image, image,alt,big_alt, tags, live, repo) {
   if (image !== undefined) {
     this.image = image
@@ -99,6 +100,9 @@ this.appear= function(right) {
   const button = document.createElement('button');
   button.classList.add('button');
   button.type='button';
+  console.log(this.id);
+  let temp=0+this.id
+  button.onclick= function () {callp(temp)}
   const button_span = document.createElement('span');
   button_span.innerHTML = 'See Project';
   button.appendChild(button_span);
@@ -119,38 +123,50 @@ this.appear= function(right) {
 
   }
   objetive.appendChild(list);
+  return button;
 }
-function message(){
-  const modal_title = document.querySelector('modal-title')
-  modal_title.textContent(this.title);
-  const modal_image = document.querySelector('modal-img');
+this.message= function(){
+  const modal_title = document.querySelector('.modal-title')
+  modal_title.textContent=this.title;
+  const modal_image = document.querySelector('.modal-img');
   modal_image.src= this.big_image;
-  const modal_info = document.querySelector('modal_info');
-  modal_info.textContent(this.description);
-  const modal_tags = document.querySelector('modal_tags')
+  const modal_info = document.querySelector('.modal-info');
+  modal_info.textContent = this.description;
+  const modal_tags = document.querySelector('#modal-tags')
   while (modal_tags.hasChildNodes()) {
-    node.removeChild(modal_tags.lastChild);
+    modal_tags.removeChild(modal_tags.lastChild);
   }
   var rectangle = document.createElement('img');
   rectangle.classList.add('rectangle');
   rectangle.src = 'assest/Rectangle.png'
   rectangle.alt = 'Rectangle'
   modal_tags.appendChild(rectangle);
-  for (i in this.tags){
+  for (let i in this.tags){
     let span = document.createElement('span');
     span.innerHTML = this.tags[i];
     rectangle = document.createElement('img');
     rectangle.classList.add('rectangle');
     rectangle.src = 'assest/Rectangle.png'
     rectangle.alt = 'Rectangle'
-    tags.appendChild(span);
-    tags.appendChild(rectangle);
+    modal_tags.appendChild(span);
+    modal_tags.appendChild(rectangle);
   }
-  var live = document.querySelector('live');
+  var live = document.querySelector('.live');
   live.href=this.live;
-  var repo = document.querySelector('repo');
+  var repo = document.querySelector('.repo');
   repo.hreft =this.repo;
 }
+const myProjects = data;
+const modal =document.querySelector('.modal-background')
+const bt =document.querySelector('.modal-buttons')
+function callp(num){
+    let buffer=myProjects[num];
+    let p =new Project(buffer.id,buffer.title,buffer.overview,buffer.description,buffer.big_image,buffer.image,buffer.alt,buffer.alt,undefined,buffer.live,buffer.repo);
+    p.message();
+    bt.style.display = "flex"
+    modal.style.visibility = "visible";
 }
+}
+
 
 export default Project

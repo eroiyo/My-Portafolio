@@ -1,7 +1,6 @@
 const nav2 = document.querySelector('.secondary-nav');
 const screenSize = window.matchMedia('(min-width: 1024px)');
 const logo = document.querySelector('.logo');
-const modal =document.querySelector('.modal-background')
 
 function clickFunction() {
   const para = document.getElementById('toggle-icon');
@@ -23,10 +22,6 @@ function phone(screenSize) {
       clickFunction();
     }
   }
-}
-
-function close_modal(){
-  modal.style.visibility = 'hidden';
 }
 phone(screenSize);
 screenSize.addListener(phone);

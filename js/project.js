@@ -84,7 +84,7 @@ this.appear= function(right) {
   part_b.appendChild(project_info);
   const tags = document.createElement('div');
   tags.classList.add('tags');
-  for (i in this.tags){
+  for (let i in this.tags){
     let span = document.createElement('span');
     span.innerHTML = this.tags[i];
     var rectangle = document.createElement('img');
@@ -153,4 +153,4 @@ function message(){
 }
 }
 
-export {Project}
+export default Project

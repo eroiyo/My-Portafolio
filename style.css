@@ -574,8 +574,8 @@ footer {
   margin-left: auto;
   position: fixed;
   left: 85%;
-  top: 10%;
-  cursor: pointer;
+  top: 12%;
+  cursor: pointer
 }
 
 .modal-img{
@@ -998,7 +998,7 @@ footer {
   }
   
   .X{
-    top: 15%
+    top: 10%
   }
   
   .modal-img{
@@ -1010,14 +1010,14 @@ footer {
   }
   
   .modal-info{
-    margin-top: 40px;
+    margin-top: 30px;
     width: 56.055363321799305%;
     color: white;
   }
 
   #modal-tags{
     width: 30.527050610820243%;
-    margin-top: 56px;
+    margin-top: 36px;
     margin-bottom: 48px;
   }
   

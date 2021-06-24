@@ -1,58 +1,58 @@
 import data from './data.js';
 
-function Project(id, title, view, description, bigImage, image, alt, bigAlt, tags, live, repo) {
-  if (image !== undefined) {
-    this.image = image;
+function Project(object) {
+  if (object.img !== undefined) {
+    this.image = object.img;
   } else {
     this.image = 'assest/placeholder.png';
   }
-  if (bigImage !== undefined) {
-    this.bigImage = bigImage;
+  if (object.bImg !== undefined) {
+    this.bigImage = object.bImg;
   } else {
     this.bigImage = 'assest/Big.png';
   }
-  if (title !== undefined) {
-    this.title = title;
+  if (object.title !== undefined) {
+    this.title = object.title;
   } else {
     this.title = 'Multi-Post Stories';
   }
-  if (alt !== undefined) {
-    this.alt = alt;
+  if (object.alt !== undefined) {
+    this.alt = object.alt;
   } else {
     this.alt = 'placeholder';
   }
-  if (bigAlt !== undefined) {
-    this.bigAlt = bigAlt;
+  if (object.bAlt !== undefined) {
+    this.bigAlt = object.bAlt;
   } else {
     this.bigAlt = 'big_placeholder';
   }
-  if (view !== undefined) {
-    this.overview = view;
+  if (object.view !== undefined) {
+    this.overview = object.view;
   } else {
     this.overview = "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.";
   }
-  if (description !== undefined) {
-    this.description = description;
+  if (object.desc !== undefined) {
+    this.description = object.desc;
   } else {
     this.description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.";
   }
-  if (tags !== undefined) {
-    this.tags = tags.split(',');
+  if (object.tags !== undefined) {
+    this.tags = object.tags.split(',');
   } else {
-    this.tags = 'Css,Html,Bootstrap,Ruby'.split(',');
+    this.tags = ['Css','Html','Bootstrap','Ruby']
   }
-  if (live !== undefined) {
-    this.live = live;
+  if (object.live !== undefined) {
+    this.live = object.live;
   } else {
     this.live = '#';
   }
-  if (repo !== undefined) {
-    this.repo = repo;
+  if (object.repo !== undefined) {
+    this.repo = object.repo;
   } else {
     this.repo = '#';
   }
-  if (id !== undefined) {
-    this.id = id;
+  if (object.id !== undefined) {
+    this.id = object.id;
   } else {
     this.id = '?';
   }
@@ -154,7 +154,6 @@ function Project(id, title, view, description, bigImage, image, alt, bigAlt, tag
     }
     const live = document.querySelector('.live');
     live.href=this.live;
-    console.log(live.onclick)
     const repo = document.querySelector('.repo');
     repo.href = this.repo;
   }
@@ -163,7 +162,7 @@ function Project(id, title, view, description, bigImage, image, alt, bigAlt, tag
   const bt = document.querySelector('.modal-buttons')
   function callp(num) {
     const b = myProjects[num];
-    const p = new Project(b.id, b.title, b.view, b.desc, b.bImage, b.image, b.alt, b.bAlt, b.tags, b.live, b.repo);
+    const p = new Project(myProjects[num]);
     p.message();
     bt.style.display = "flex"
     modal.style.visibility = "visible";

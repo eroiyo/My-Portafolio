@@ -78,7 +78,7 @@ function Project(object) {
     rectangle.alt = 'Rectangle';
     modalTags.appendChild(rectangle);
     const copy = this.tags;
-    for (let i = 0; i < opy.lenght; i += 1) {
+    for (let i = 0; i < copy.lenght; i += 1) {
       const span = document.createElement('span');
       span.innerHTML = this.tags[i];
       rectangle = document.createElement('img');

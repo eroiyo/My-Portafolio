@@ -33,3 +33,4 @@ function closeModal() {
 
 phone(screenSize);
 screenSize.addListener(phone);
+closeModal();

@@ -3,11 +3,13 @@ import data from './data.js';
 
 let right = 0;
 const myProjects = data;
-for (let i = 0; i < myProjects.length; i=i+1) {
+for (let i = 0; i < myProjects.length; i++) {
   const b = myProjects[i];
   const p = new Project(b);
   p.appear(right);
-  if (right === 0){
-    right = 1;}
-  else{
-    right = 0;}}
+  if (right === 0) {
+    right = 1;
+  } else {
+    right = 0;
+  }
+}

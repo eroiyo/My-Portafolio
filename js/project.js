@@ -39,7 +39,7 @@ function Project(object) {
   if (object.tags !== undefined) {
     this.tags = object.tags.split(',');
   } else {
-    this.tags = ['Css','Html','Bootstrap','Ruby']
+    this.tags = ['Css', 'Html', 'Bootstrap', 'Ruby']
   }
   if (object.live !== undefined) {
     this.live = object.live;
@@ -58,7 +58,7 @@ function Project(object) {
   }
 
   this.appear = function (right) {
-    let rectangle=0;
+    let rectangle = 0;
     const objetive = document.getElementById('projects');
     const list = document.createElement('li');
     const box = document.createElement('div');
@@ -87,7 +87,7 @@ function Project(object) {
     const tags = document.createElement('div');
     tags.classList.add('tags');
     const tagsCurrentValues = this.tags
-    for (let i=0; i<tagsCurrentValues.length; i++) {
+    for (let i = 0; i < tagsCurrentValues.length; i++) {
       const span = document.createElement('span');
       span.innerHTML = this.tags[i];
       rectangle = document.createElement('img');
@@ -95,15 +95,17 @@ function Project(object) {
       rectangle.src = 'assest/Rectangle.png';
       rectangle.alt = 'Rectangle';
       tags.appendChild(span);
-      if(tagsCurrentValues.length!==i+1)
-      tags.appendChild(rectangle);
+      if (tagsCurrentValues.length !== i + 1)
+        tags.appendChild(rectangle);
     }
     partB.appendChild(tags)
     const button = document.createElement('button');
     button.classList.add('button');
     button.type = 'button';
     let temp = 0 + this.id
-    button.onclick = function () { callp(temp) }
+    button.onclick = function () {
+      callp(temp)
+    }
     const button_span = document.createElement('span');
     button_span.innerHTML = 'See Project';
     button.appendChild(button_span);
@@ -153,13 +155,14 @@ function Project(object) {
       modal_tags.appendChild(rectangle);
     }
     const live = document.querySelector('.live');
-    live.href=this.live;
+    live.href = this.live;
     const repo = document.querySelector('.repo');
     repo.href = this.repo;
   }
   const myProjects = data;
   const modal = document.querySelector('.modal-background')
   const bt = document.querySelector('.modal-buttons')
+
   function callp(num) {
     const b = myProjects[num];
     const p = new Project(myProjects[num]);

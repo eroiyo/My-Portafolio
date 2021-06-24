@@ -1,8 +1,18 @@
 import data from './data.js';
 
+<<<<<<< HEAD
 const myProjects = data;
 const modal = document.querySelector('.modal-background');
 const bt = document.querySelector('.modal-buttons');
+=======
+function callp(num) {
+  const b = myProjects[num];
+  const p = new Project(b);
+  p.message();
+  bt.style.display = 'flex';
+  modal.style.visibility = 'visible';
+}
+>>>>>>> parent of fd639f9 (Fix Linter XII)
 
 function Project(object) {
   if (object.img !== undefined) {
@@ -60,6 +70,7 @@ function Project(object) {
   } else {
     this.id = '?';
   }
+<<<<<<< HEAD
   this.message = function () {
     let rectangle = 0;
     const modalTitle = document.querySelector('.modal-title');
@@ -104,6 +115,9 @@ function Project(object) {
     bt.style.display = 'flex';
     modal.style.visibility = 'visible';
   }
+=======
+
+>>>>>>> parent of fd639f9 (Fix Linter XII)
   this.appear = function (right) {
     let rectangle = 0;
     const objetive = document.getElementById('projects');
@@ -173,6 +187,45 @@ function Project(object) {
     objetive.appendChild(list);
     return button;
   };
+<<<<<<< HEAD
+=======
+  this.message = function () {
+    let rectangle = 0;
+    const modalTitle = document.querySelector('.modal-title');
+    modalTitle.textContent = this.title;
+    const modalImage = document.querySelector('.modal-img');
+    modalImage.src = this.bigImage;
+    const modalInfo = document.querySelector('.modal-info');
+    modalInfo.textContent = this.description;
+    const modalTags = document.querySelector('#modal-tags');
+    while (modalTags.hasChildNodes()) {
+      modalTags.removeChild(modalTags.lastChild);
+    }
+    rectangle = document.createElement('img');
+    rectangle.classList.add('rectangle');
+    rectangle.src = 'assest/Rectangle.png';
+    rectangle.alt = 'Rectangle';
+    modalTags.appendChild(rectangle);
+    const copy = this.tags;
+    for (let i = 0; i < opy.lenght; i += 1) {
+      const span = document.createElement('span');
+      span.innerHTML = this.tags[i];
+      rectangle = document.createElement('img');
+      rectangle.classList.add('rectangle');
+      rectangle.src = 'assest/Rectangle.png';
+      rectangle.alt = 'Rectangle';
+      modalTags.appendChild(span);
+      modalTags.appendChild(rectangle);
+    }
+    const live = document.querySelector('.live');
+    live.href = this.live;
+    const repo = document.querySelector('.repo');
+    repo.href = this.repo;
+  };
+  const myProjects = data;
+  const modal = document.querySelector('.modal-background');
+  const bt = document.querySelector('.modal-buttons');
+>>>>>>> parent of fd639f9 (Fix Linter XII)
 }
 
 export default Project;

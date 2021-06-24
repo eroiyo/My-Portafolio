@@ -56,7 +56,7 @@ function Project(object) {
   } else {
     this.id = '?';
   }
-  this.appear = function (right) {
+  this.appear = function(right) {
     let rectangle = 0;
     const objetive = document.getElementById('projects');
     const list = document.createElement('li');
@@ -156,29 +156,17 @@ function Project(object) {
     const repo = document.querySelector('.repo');
     repo.href = this.repo;
   };
-  const myProjects = data;
-  const modal = document.querySelector('.modal-background');
-  const bt = document.querySelector('.modal-buttons');
+}
+const myProjects = data;
+const modal = document.querySelector('.modal-background');
+const bt = document.querySelector('.modal-buttons');  
 
-  function callp(num) {
-    let buffer = myProjects[num];
-    let p = new Project(
-      buffer.id,
-      buffer.title,
-      buffer.overview,
-      buffer.description,
-      buffer.big_image,
-      buffer.image,
-      buffer.alt,
-      buffer.alt,
-      undefined,
-      buffer.live,
-      buffer.repo
-    );
-    p.message();
-    bt.style.display = 'flex';
-    modal.style.visibility = 'visible';
-  }
+function callp(num) {
+  const b = myProjects[num];
+  const p = new Project(b);
+  p.message();
+  bt.style.display = 'flex';
+  modal.style.visibility = 'visible';
 }
 
 export default Project;

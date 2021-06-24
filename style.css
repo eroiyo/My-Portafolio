@@ -543,7 +543,6 @@ footer {
   color: white;
   font-size: 20px;
   overflow: scroll;
-  scrollbar-width: none;
 }
 
 .modal::-webkit-scrollbar {
@@ -634,9 +633,6 @@ footer {
   font-size: 20px;
   margin-left: 5px;
 }
-
-
-/* on desktop */
 
 @media screen and (min-width: 1024px) {
   .circle {
@@ -1018,7 +1014,7 @@ footer {
 
   #modal-tags {
     width: 30.527050610820243%;
-    margin-top: 36px;
+    margin-top: 80px;
     margin-bottom: 48px;
   }
 

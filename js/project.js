@@ -153,16 +153,16 @@ function Project(id, title, view, description, bigImage, image, alt, bigAlt, tag
       modal_tags.appendChild(span);
       modal_tags.appendChild(rectangle);
     }
-    var live = document.querySelector('.live-link');
-    live.href = this.live;
-    var repo = document.querySelector('.repo-link');
-    repo.hreft = this.repo;
+    var live = document.querySelector('.live');
+    live.onclick = function () { location.href = this.live; }
+    var repo = document.querySelector('.repo');
+    repo.onclick = function () { location.href = this.repo; }
   }
   const myProjects = data;
   const modal = document.querySelector('.modal-background')
   const bt = document.querySelector('.modal-buttons')
   function callp(num) {
-    const buffer = myProjects[num];
+    const b = myProjects[num];
     const p = new Project(b.id, b.title, b.view, b.desc, b.bImage, b.image, b.alt, b.bAlt, b.tags, b.live, b.repo);
     p.message();
     bt.style.display = "flex"

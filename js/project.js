@@ -1,4 +1,5 @@
 import data from './data.js';
+
 function Project(id, title, view, description, bigImage, image, alt, bigAlt, tags, live, repo) {
   if (image !== undefined) {
     this.image = image;
@@ -57,6 +58,7 @@ function Project(id, title, view, description, bigImage, image, alt, bigAlt, tag
   }
 
   this.appear = function (right) {
+    let rectangle=0;
     const objetive = document.getElementById('projects');
     const list = document.createElement('li');
     const box = document.createElement('div');
@@ -84,17 +86,18 @@ function Project(id, title, view, description, bigImage, image, alt, bigAlt, tag
     partB.appendChild(projectInfo);
     const tags = document.createElement('div');
     tags.classList.add('tags');
-    for (let i in this.tags) {
-      let span = document.createElement('span');
+    const tagsCurrentValues = this.tags
+    for (let i=0; i<tagsCurrentValues.length; i++) {
+      const span = document.createElement('span');
       span.innerHTML = this.tags[i];
-      var rectangle = document.createElement('img');
+      rectangle = document.createElement('img');
       rectangle.classList.add('rectangle');
-      rectangle.src = 'assest/Rectangle.png'
-      rectangle.alt = 'Rectangle'
+      rectangle.src = 'assest/Rectangle.png';
+      rectangle.alt = 'Rectangle';
       tags.appendChild(span);
+      if(tagsCurrentValues.length!==i+1)
       tags.appendChild(rectangle);
     }
-    rectangle.remove();
     partB.appendChild(tags)
     const button = document.createElement('button');
     button.classList.add('button');
@@ -159,8 +162,8 @@ function Project(id, title, view, description, bigImage, image, alt, bigAlt, tag
   const modal = document.querySelector('.modal-background')
   const bt = document.querySelector('.modal-buttons')
   function callp(num) {
-    let buffer = myProjects[num];
-    let p = new Project(buffer.id, buffer.title, buffer.overview, buffer.description, buffer.bigImage, buffer.image, buffer.alt, buffer.alt, undefined, buffer.live, buffer.repo);
+    const buffer = myProjects[num];
+    const p = new Project(b.id, b.title, b.view, b.desc, b.bImage, b.image, b.alt, b.bAlt, b.tags, b.live, b.repo);
     p.message();
     bt.style.display = "flex"
     modal.style.visibility = "visible";

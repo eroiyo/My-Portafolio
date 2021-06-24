@@ -102,7 +102,6 @@ function Project(id, title, view, description, bigImage, image, alt, bigAlt, tag
     const button = document.createElement('button');
     button.classList.add('button');
     button.type = 'button';
-    console.log(this.id);
     let temp = 0 + this.id
     button.onclick = function () { callp(temp) }
     const button_span = document.createElement('span');
@@ -153,10 +152,11 @@ function Project(id, title, view, description, bigImage, image, alt, bigAlt, tag
       modal_tags.appendChild(span);
       modal_tags.appendChild(rectangle);
     }
-    var live = document.querySelector('.live');
-    live.onclick = function () { location.href = this.live; }
-    var repo = document.querySelector('.repo');
-    repo.onclick = function () { location.href = this.repo; }
+    const live = document.querySelector('.live');
+    live.href=this.live;
+    console.log(live.onclick)
+    const repo = document.querySelector('.repo');
+    repo.href = this.repo;
   }
   const myProjects = data;
   const modal = document.querySelector('.modal-background')

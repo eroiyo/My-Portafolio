@@ -56,75 +56,74 @@ function Project(object) {
   } else {
     this.id = '?';
   }
-
-this.appear = function(right) {
-  let rectangle = 0;
-  const objetive= document.getElementById('projects');
-  const list = document.createElement('li');
-  const box = document.createElement('div');
-  const first = document.createElement('div');
-  first.classList.add('first');
-  list.appendChild(box);
-  const part_a = document.createElement('div');
-  part_a.classList.add('part-a')
-  const sm_img= document.createElement('img');
-  sm_img.src = this.image;
-  sm_img.alt = this.alt;
-  sm_img.classList.add('placeholder');
-  part_a.appendChild(sm_img);
-  const latest = document.createElement('div');
-  latest.classList.add('latest');
-  const part_b = document.createElement('div');
-  part_b.classList.add('part_b');
-  const project_title = document.createElement('h2');
-  project_title.classList.add('project-title');
-  project_title.innerHTML =this.title;
-  part_b.appendChild(project_title);
-  const project_info = document.createElement('p');
-  project_info.classList.add('project-info');
-  project_info.innerHTML =this.overview;
-  part_b.appendChild(project_info);
-  const tags = document.createElement('div');
-  tags.classList.add('tags');
-  for (let i in this.tags){
-    let span = document.createElement('span');
-    span.innerHTML = this.tags[i];
-    rectangle = document.createElement('img');
-    rectangle.classList.add('rectangle');
-    rectangle.src = 'assest/Rectangle.png'
-    rectangle.alt = 'Rectangle'
-    tags.appendChild(span);
-    tags.appendChild(rectangle);
-  }
-  rectangle.remove();
-  part_b.appendChild(tags)
-  const button = document.createElement('button');
-  button.classList.add('button');
-  button.type='button';
-  console.log(this.id);
-  let temp=0+this.id
-  button.onclick= function () {callp(temp)}
-  const button_span = document.createElement('span');
-  button_span.innerHTML = 'See Project';
-  button.appendChild(button_span);
-  part_b.appendChild(button);
-
-  if(right==0){
-    first.appendChild(part_a);
-    latest.appendChild(part_b);
-    box.appendChild(first);
-    box.appendChild(latest)
-    box.classList.add('project-card');
-  }else{
-    first.appendChild(part_b);
-    latest.appendChild(part_a);
-    box.appendChild(latest);
-    box.appendChild(first)
-    box.classList.add('project-card2');
-
-  }
+  this.appear = function(right) {
+    let rectangle = 0;
+    const objetive = document.getElementById('projects');
+    const list = document.createElement('li');
+    const box = document.createElement('div');
+    const first = document.createElement('div');
+    first.classList.add('first');
+    list.appendChild(box);
+    const partA = document.createElement('div');
+    partA.classList.add('part-a');
+    const smImg = document.createElement('img');
+    smImg.src = this.image;
+    smImg.alt = this.alt;
+    smImg.classList.add('placeholder');
+    partA.appendChild(smImg);
+    const latest = document.createElement('div');
+    latest.classList.add('latest');
+    const partB = document.createElement('div');
+    partB.classList.add('part-b');
+    const projectTitle = document.createElement('h2');
+    projectTitle.classList.add('project-title');
+    projectTitle.innerHTML = this.title;
+    partB.appendChild(projectTitle);
+    const projectInfo = document.createElement('p');
+    projectInfo.classList.add('project-info');
+    projectInfo.innerHTML = this.overview;
+    partB.appendChild(projectInfo);
+    const tags = document.createElement('div');
+    tags.classList.add('tags');
+    const tagsCurrentValues = this.tags;
+    for (let i in this.tags){
+      const span = document.createElement('span');
+      span.innerHTML = this.tags[i];
+      rectangle = document.createElement('img');
+      rectangle.classList.add('rectangle');
+      rectangle.src = 'assest/Rectangle.png';
+      rectangle.alt = 'Rectangle';
+      tags.appendChild(span);
+      if (tagsCurrentValues.length !== i + 1) tags.appendChild(rectangle);
+    }
+    partB.appendChild(tags);
+    const button = document.createElement('button');
+    button.classList.add('button');
+    button.type = 'button';
+    const temp = 0 + this.id;
+    button.onclick = function () {
+      callp(temp);
+    };
+    const buttonSpan = document.createElement('span');
+    buttonSpan.innerHTML = 'See Project';
+    button.appendChild(buttonSpan);
+    partB.appendChild(button);
+    if (right === 0) {
+      first.appendChild(partA);
+      latest.appendChild(partB);
+      box.appendChild(first);
+      box.appendChild(latest);
+      box.classList.add('project-card');
+    } 
+    else {
+      first.appendChild(partB);
+      latest.appendChild(partA);
+      box.appendChild(latest);
+      box.appendChild(first);
+      box.classList.add('project-card2');
+    }
   objetive.appendChild(list);
-}
+};
 this.message = function () {
   let rectangle = 0;
   const modalTitle = document.querySelector('.modal-title');

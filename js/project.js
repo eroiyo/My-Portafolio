@@ -78,7 +78,11 @@ function Project(object) {
     rectangle.alt = 'Rectangle';
     modalTags.appendChild(rectangle);
     const copy = this.tags;
+<<<<<<< HEAD
     for (let i = 0; i < copy.length; i += 1) {
+=======
+    for (let i = 0; i < opy.lenght; i += 1) {
+>>>>>>> parent of e8b0e39 (Fix Linter XIV)
       const span = document.createElement('span');
       span.innerHTML = this.tags[i];
       rectangle = document.createElement('img');

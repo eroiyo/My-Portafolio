@@ -1,5 +1,16 @@
 import data from './data.js';
 
+const myProjects = data;
+const modal = document.querySelector('.modal-background');
+const bt = document.querySelector('.modal-buttons');  
+function callp(num) {
+  const b = myProjects[num];
+  const p = new Project(b);
+  p.message();
+  bt.style.display = 'flex';
+  modal.style.visibility = 'visible';
+}
+
 function Project(object) {
   if (object.img !== undefined) {
     this.image = object.img;
@@ -86,7 +97,7 @@ function Project(object) {
     const tags = document.createElement('div');
     tags.classList.add('tags');
     const tagsCurrentValues = this.tags;
-    for (let i in this.tags) {
+    for (let i = 0; i < tagsCurrentValues.length; i += 1) {
       const span = document.createElement('span');
       span.innerHTML = this.tags[i];
       rectangle = document.createElement('img');
@@ -157,17 +168,6 @@ function Project(object) {
     const repo = document.querySelector('.repo');
     repo.href = this.repo;
   };
-}
-const myProjects = data;
-const modal = document.querySelector('.modal-background');
-const bt = document.querySelector('.modal-buttons');  
-
-function callp(num) {
-  const b = myProjects[num];
-  const p = new Project(b);
-  p.message();
-  bt.style.display = 'flex';
-  modal.style.visibility = 'visible';
 }
 
 export default Project;

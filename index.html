@@ -71,7 +71,7 @@
           <i class="fa fa-times" aria-hidden="true" onclick="close_modal()"></i>
         </div>
       </div>
-      <img class=modal-img src="assest/Big.png">
+      <img class=modal-img src="assest/Big.png" alt="Big-Placeholder">
       <p class=modal-info>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
         scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting ever since the
@@ -87,10 +87,14 @@
         <span>Ruby</span>
       </div>
       <div class="modal-buttons">
-        <button class="button modal-button live" href="#" type="button"><span>See Live</span><img src="assest/Icon.png"
+        <a href="#" class=live-link>
+        <button class="button modal-button live" type="button"><span>See Live</span><img src="assest/Icon.png"
             class="icon"></button>
-        <button class="button modal-button repo" href="#" type="button"><span>See Source<i class="fa fa-github git"
+          </a>
+          <a href="#" class=repo-link>
+        <button class="button modal-button repo" type="button"><span>See Source<i class="fa fa-github git"
               aria-hidden="true"></i></span></button>
+            </a>
       </div>
     </div>
   </div>

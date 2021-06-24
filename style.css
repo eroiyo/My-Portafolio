@@ -13,7 +13,7 @@ body {
   -ms-overflow-style: none;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -516,7 +516,7 @@ footer {
   margin-top: 24vw;
 }
 
-.modal-background{
+.modal-background {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -529,12 +529,12 @@ footer {
   visibility: hidden;
 }
 
-.modal{
-  display:flex;
+.modal {
+  display: flex;
   width: 87.2vw;
   height: 90vh;
   position: fixed;
-  background-color:rgba(128, 128, 128, 0.45);
+  background-color: rgba(128, 128, 128, 0.45);
   z-index: 3;
   flex-direction: column;
   border-width: 1px;
@@ -542,16 +542,16 @@ footer {
   border-color: white;
   color: white;
   font-size: 20px;
-  overflow:scroll;
+  overflow: scroll;
   scrollbar-width: none;
 }
 
-.modal::-webkit-scrollbar{
+.modal::-webkit-scrollbar {
   display: none;
 }
 
-.modal-header{
-  display:flex;
+.modal-header {
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
   width: 85.3211009174312%;
@@ -560,23 +560,22 @@ footer {
   margin-right: auto;
 }
 
-
-.modal-title{
+.modal-title {
   font-size: 20px;
   align-self: center;
   color: white;
   text-align: left;
 }
 
-.X{
+.X {
   margin-left: auto;
   position: fixed;
   left: 85%;
   top: 12%;
-  cursor: pointer
+  cursor: pointer;
 }
 
-.modal-img{
+.modal-img {
   margin-top: 12px;
   width: 74.52086811352254vw;
   height: 48.34507931379061vw;
@@ -584,30 +583,30 @@ footer {
   margin-right: auto;
 }
 
-.modal-info{
+.modal-info {
   font-size: 16px;
   line-height: 24px;
   width: 74.52086811352254vw;
   margin-left: auto;
   margin-right: auto;
 }
-#modal-tags{
+#modal-tags {
   width: 74.52086811352254vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
 }
 
-#modal-tags span{
+#modal-tags span {
   font-size: 15px;
 }
 
-.modal-buttons{
+.modal-buttons {
   display: flex;
   flex-direction: column;
 }
 
-.modal-button{
+.modal-button {
   margin-top: 28px;
   margin-bottom: 0px;
   width: 108px;
@@ -616,22 +615,22 @@ footer {
   margin-right: auto;
 }
 
-.repo{
+.repo {
   margin-top: 24px;
   width: 124px;
   margin-bottom: 28px;
 }
 
-.icon{
+.icon {
   margin: auto auto;
 }
 
-.git{
+.git {
   font-size: 20px;
   margin-left: 5px;
 }
 
-.modal-button span{
+.modal-button span {
   font-size: 12px;
 }
 
@@ -984,74 +983,73 @@ footer {
   .four {
     font-size: 1vw;
   }
-  .modal{
-    display:flex;
+  .modal {
+    display: flex;
     width: 80.27777777777777%;
     height: 90vh;
     font-size: 20px;
   }
-  
-  .modal-title{
+
+  .modal-title {
     font-size: 40px;
   }
-  
-  .X{
-    top: 10%
+
+  .X {
+    top: 10%;
   }
-  
-  .modal-img{
+
+  .modal-img {
     margin-top: 12px;
     width: 96.68411867364748%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .modal-info{
+
+  .modal-info {
     margin-top: 30px;
     line-height: 30px;
     width: 56.055363321799305%;
     color: white;
   }
 
-  #modal-tags{
+  #modal-tags {
     width: 30.527050610820243%;
     margin-top: 36px;
     margin-bottom: 48px;
   }
-  
-  .modal-buttons{
+
+  .modal-buttons {
     flex-direction: row;
     width: 30.527050610820243%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 90px;
   }
-  
-  .modal-button{
+
+  .modal-button {
     margin-top: 0px;
     margin-bottom: 0px;
     width: 150px;
     height: auto;
   }
-  
-  .repo{
+
+  .repo {
     width: 170px;
     margin-left: 78px;
   }
-  
-  .icon{
-    margin: auto auto;
-  }
-  
-  .git{
-    font-size: 20px;
-    margin-left: 7px;
-  }
-  
-  .modal-button span{
-    font-size: 12px;
+
+  .icon {
     margin: auto auto;
   }
 
+  .git {
+    font-size: 20px;
+    margin-left: 7px;
+  }
+
+  .modal-button span {
+    font-size: 12px;
+    margin: auto auto;
+  }
 }

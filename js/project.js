@@ -1,5 +1,9 @@
 import data from './data.js';
 
+const myProjects = data;
+const modal = document.querySelector('.modal-background');
+const bt = document.querySelector('.modal-buttons');
+
 function Project(object) {
   if (object.img !== undefined) {
     this.image = object.img;
@@ -165,9 +169,6 @@ function Project(object) {
     objetive.appendChild(list);
     return button;
   };
-  const myProjects = data;
-  const modal = document.querySelector('.modal-background');
-  const bt = document.querySelector('.modal-buttons');
 }
 
 export default Project;

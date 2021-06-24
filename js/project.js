@@ -29,14 +29,12 @@ function Project(object) {
   if (object.view !== undefined) {
     this.overview = object.view;
   } else {
-    this.overview =
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.";
+    this.overview = "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.";
   }
   if (object.desc !== undefined) {
     this.description = object.desc;
   } else {
-    this.description =
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.";
+    this.description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.";
   }
   if (object.tags !== undefined) {
     this.tags = object.tags.split(',');
@@ -89,7 +87,7 @@ function Project(object) {
     const tags = document.createElement('div');
     tags.classList.add('tags');
     const tagsCurrentValues = this.tags;
-    for (let i = 0; i < tagsCurrentValues.length; i++) {
+    for (let i = 0; i < tagsCurrentValues.length; i =+ 1) {
       const span = document.createElement('span');
       span.innerHTML = this.tags[i];
       rectangle = document.createElement('img');
@@ -103,16 +101,16 @@ function Project(object) {
     const button = document.createElement('button');
     button.classList.add('button');
     button.type = 'button';
-    let temp = 0 + this.id;
+    const temp = 0 + this.id;
     button.onclick = function () {
       callp(temp);
     };
-    const button_span = document.createElement('span');
-    button_span.innerHTML = 'See Project';
-    button.appendChild(button_span);
+    const buttonSpan = document.createElement('span');
+    buttonSpan.innerHTML = 'See Project';
+    button.appendChild(buttonSpan);
     partB.appendChild(button);
 
-    if (right == 0) {
+    if (right === 0) {
       first.appendChild(partA);
       latest.appendChild(partB);
       box.appendChild(first);
@@ -129,30 +127,32 @@ function Project(object) {
     return button;
   };
   this.message = function () {
-    const modal_title = document.querySelector('.modal-title');
-    modal_title.textContent = this.title;
-    const modal_image = document.querySelector('.modal-img');
-    modal_image.src = this.bigImage;
-    const modal_info = document.querySelector('.modal-info');
-    modal_info.textContent = this.description;
-    const modal_tags = document.querySelector('#modal-tags');
-    while (modal_tags.hasChildNodes()) {
-      modal_tags.removeChild(modal_tags.lastChild);
+    var rectangle =0;
+    const modalTitle = document.querySelector('.modal-title');
+    modalTitle.textContent = this.title;
+    const modalImage = document.querySelector('.modal-img');
+    modalImage.src = this.bigImage;
+    const modalInfo = document.querySelector('.modal-info');
+    modalInfo.textContent = this.description;
+    const modalTags = document.querySelector('#modal-tags');
+    while (modalTags.hasChildNodes()) {
+      modalTags.removeChild(modalTags.lastChild);
     }
-    var rectangle = document.createElement('img');
+    rectangle = document.createElement('img');
     rectangle.classList.add('rectangle');
     rectangle.src = 'assest/Rectangle.png';
     rectangle.alt = 'Rectangle';
-    modal_tags.appendChild(rectangle);
-    for (let i in this.tags) {
-      let span = document.createElement('span');
+    modalTags.appendChild(rectangle);
+    let copy = this.tags;
+    for (let i=0; i<copy.lenght; i += 1) {
+      const span = document.createElement('span');
       span.innerHTML = this.tags[i];
       rectangle = document.createElement('img');
       rectangle.classList.add('rectangle');
       rectangle.src = 'assest/Rectangle.png';
       rectangle.alt = 'Rectangle';
-      modal_tags.appendChild(span);
-      modal_tags.appendChild(rectangle);
+      modalTags.appendChild(span);
+      modalTags.appendChild(rectangle);
     }
     const live = document.querySelector('.live');
     live.href = this.live;
@@ -165,7 +165,7 @@ function Project(object) {
 
   function callp(num) {
     const b = myProjects[num];
-    const p = new Project(myProjects[num]);
+    const p = new Project(b);
     p.message();
     bt.style.display = 'flex';
     modal.style.visibility = 'visible';

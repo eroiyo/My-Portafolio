@@ -3,7 +3,7 @@ import data from './data.js';
 
 let right = 0;
 const myProjects = data;
-for (let i = 0; i < myProjects.length; i+=1) {
+for (let i = 0; i < myProjects.length; i += 1) {
   const b = myProjects[i];
   const p = new Project(b);
   p.appear(right);

@@ -1,13 +1,5 @@
 import data from './data.js';
 
-function callp(num) {
-  const b = myProjects[num];
-  const p = new Project(b);
-  p.message();
-  bt.style.display = 'flex';
-  modal.style.visibility = 'visible';
-}
-
 function Project(object) {
   if (object.img !== undefined) {
     this.image = object.img;
@@ -64,7 +56,46 @@ function Project(object) {
   } else {
     this.id = '?';
   }
-
+  this.message = function () {
+    let rectangle = 0;
+    const modalTitle = document.querySelector('.modal-title');
+    modalTitle.textContent = this.title;
+    const modalImage = document.querySelector('.modal-img');
+    modalImage.src = this.bigImage;
+    const modalInfo = document.querySelector('.modal-info');
+    modalInfo.textContent = this.description;
+    const modalTags = document.querySelector('#modal-tags');
+    while (modalTags.hasChildNodes()) {
+      modalTags.removeChild(modalTags.lastChild);
+    }
+    rectangle = document.createElement('img');
+    rectangle.classList.add('rectangle');
+    rectangle.src = 'assest/Rectangle.png';
+    rectangle.alt = 'Rectangle';
+    modalTags.appendChild(rectangle);
+    const copy = this.tags;
+    for (let i = 0; i < opy.lenght; i += 1) {
+      const span = document.createElement('span');
+      span.innerHTML = this.tags[i];
+      rectangle = document.createElement('img');
+      rectangle.classList.add('rectangle');
+      rectangle.src = 'assest/Rectangle.png';
+      rectangle.alt = 'Rectangle';
+      modalTags.appendChild(span);
+      modalTags.appendChild(rectangle);
+    }
+    const live = document.querySelector('.live');
+    live.href = this.live;
+    const repo = document.querySelector('.repo');
+    repo.href = this.repo;
+  };
+  function callp(num) {
+    const b = myProjects[num];
+    const p = new Project(b);
+    p.message();
+    bt.style.display = 'flex';
+    modal.style.visibility = 'visible';
+  }
   this.appear = function (right) {
     let rectangle = 0;
     const objetive = document.getElementById('projects');
@@ -133,39 +164,6 @@ function Project(object) {
     }
     objetive.appendChild(list);
     return button;
-  };
-  this.message = function () {
-    let rectangle = 0;
-    const modalTitle = document.querySelector('.modal-title');
-    modalTitle.textContent = this.title;
-    const modalImage = document.querySelector('.modal-img');
-    modalImage.src = this.bigImage;
-    const modalInfo = document.querySelector('.modal-info');
-    modalInfo.textContent = this.description;
-    const modalTags = document.querySelector('#modal-tags');
-    while (modalTags.hasChildNodes()) {
-      modalTags.removeChild(modalTags.lastChild);
-    }
-    rectangle = document.createElement('img');
-    rectangle.classList.add('rectangle');
-    rectangle.src = 'assest/Rectangle.png';
-    rectangle.alt = 'Rectangle';
-    modalTags.appendChild(rectangle);
-    const copy = this.tags;
-    for (let i = 0; i < opy.lenght; i += 1) {
-      const span = document.createElement('span');
-      span.innerHTML = this.tags[i];
-      rectangle = document.createElement('img');
-      rectangle.classList.add('rectangle');
-      rectangle.src = 'assest/Rectangle.png';
-      rectangle.alt = 'Rectangle';
-      modalTags.appendChild(span);
-      modalTags.appendChild(rectangle);
-    }
-    const live = document.querySelector('.live');
-    live.href = this.live;
-    const repo = document.querySelector('.repo');
-    repo.href = this.repo;
   };
   const myProjects = data;
   const modal = document.querySelector('.modal-background');

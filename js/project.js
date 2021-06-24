@@ -2,14 +2,7 @@ import data from './data.js';
 
 const myProjects = data;
 const modal = document.querySelector('.modal-background');
-const bt = document.querySelector('.modal-buttons');  
-function callp(num) {
-  const b = myProjects[num];
-  const p = new Project(b);
-  p.message();
-  bt.style.display = 'flex';
-  modal.style.visibility = 'visible';
-}
+const bt = document.querySelector('.modal-buttons');
 
 function Project(object) {
   if (object.img !== undefined) {
@@ -66,6 +59,14 @@ function Project(object) {
     this.id = object.id;
   } else {
     this.id = '?';
+  }
+
+  function callp(num) {
+    const b = myProjects[num];
+    const p = new Project(b);
+    p.message();
+    bt.style.display = 'flex';
+    modal.style.visibility = 'visible';
   }
   this.appear = function (right) {
     let rectangle = 0;

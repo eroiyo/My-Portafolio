@@ -10,6 +10,11 @@ body {
   width: 100vw;
   background-color: #191765;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -70,28 +75,66 @@ h1 {
 .logo {
   font-style: normal;
   position: static;
-  width: 40px;
-  height: 35px;
+  width: 2vh;
+  height: 1vh;
   color: #fff;
   letter-spacing: 0.03em;
   font-size: 18px;
   display: flex;
   align-items: center;
   margin-left: 5%;
+  margin-bottom: auto;
   margin-right: auto;
+  margin-top: 2.5vh;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.not-hidden {
+  display: flex;
 }
 
 .menu {
   font-style: normal;
   position: static;
-  width: 40px;
   margin-right: 5%;
   color: #fff;
   letter-spacing: 0.03em;
-  height: 17.5px;
-  font-size: 18px;
+  font-size: 10px;
   display: flex;
-  margin-top: 10px;
+}
+
+#toggle-icon {
+  cursor: pointer;
+  display: table;
+}
+
+.hbar1,
+.hbar2,
+.hbar3 {
+  background-color: #fff;
+  width: 5.47645125958379vh;
+  height: 0.6258801439524331vh;
+  transition: 0.5s;
+  margin-top: 1.09375vh;
+  margin-bottom: 1.09375vh;
+  border-radius: 2px;
+}
+
+.rotate-icon .hbar1 {
+  -webkit-transform: rotate(-45deg) translate(-1.25vh, 0.9375vh);
+  transform: rotate(-45deg) translate(-1.25vh, 0.9375vh);
+}
+
+.rotate-icon .hbar2 {
+  opacity: 0;
+}
+
+.rotate-icon .hbar3 {
+  -webkit-transform: rotate(42deg) translate(-1.40625vh, -1.25vh);
+  transform: rotate(42deg) translate(-1.40625vh, -1.25vh);
 }
 
 h2 {
@@ -144,19 +187,63 @@ p {
 }
 
 header {
+  background-color: #191765;
   align-self: flex-start;
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 48px;
+  padding-top: 1vh;
+  height: 7vh;
   position: fixed;
-  padding-top: 5px;
+  z-index: 2;
 }
 
 nav {
   position: fixed;
   display: flex;
   width: 100%;
+  height: 7vh;
+}
+
+.secondary-nav {
+  position: fixed;
+  display: none;
+  width: 100%;
+  margin-top: 7vh;
+  height: 93vh;
+  flex-direction: column;
+  z-index: 2;
+  background-color: #191765;
+  background-image: url(assest/nav2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.nav2-text {
+  width: 50px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.nav2-element {
+  margin-bottom: 18px;
+  margin-left: 40px;
+  margin-right: 52px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav2-arrow {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 80%;
+  color: #7d73fc;
+  font-size: 30px;
+}
+
+.nav2-first {
+  margin-top: 4vh;
 }
 
 .bar {
@@ -325,8 +412,6 @@ span {
 button {
   display: flex;
   background-color: #7d73fc;
-  color: black;
-  transition-duration: 0.4s;
   border: none;
   text-align: center;
   padding: 2vw;
@@ -431,7 +516,140 @@ footer {
   margin-top: 24vw;
 }
 
-/* on desktop */
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  visibility: hidden;
+}
+
+.modal {
+  display: flex;
+  width: 87.2vw;
+  height: 90vh;
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.45);
+  z-index: 3;
+  flex-direction: column;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  font-size: 20px;
+  overflow: scroll;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 85.3211009174312%;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-title {
+  font-size: 20px;
+  align-self: center;
+  color: white;
+  text-align: left;
+}
+
+.X {
+  margin-left: auto;
+  position: fixed;
+  left: 85%;
+  top: 12%;
+  cursor: pointer;
+}
+
+.modal-img {
+  margin-top: 12px;
+  width: 74.52086811352254vw;
+  height: 48.34507931379061vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-info {
+  font-size: 16px;
+  line-height: 24px;
+  width: 74.52086811352254vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#modal-tags {
+  width: 74.52086811352254vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.modal-button span {
+  font-size: 12px;
+}
+
+#modal-tags span {
+  font-size: 15px;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-button {
+  display: flex;
+  background-color: #7d73fc;
+  border: none;
+  text-align: center;
+  padding: 2vw;
+  font-size: 12px;
+  margin-top: 28px;
+  margin-bottom: 1px;
+  width: 108px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-button:focus {
+  background-color: #5e42d7;
+}
+
+.modal-button:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #7d73fc;
+}
+
+.repo {
+  margin-top: 24px;
+  width: 124px;
+  margin-bottom: 28px;
+}
+
+.icon {
+  margin: auto auto;
+}
+
+.git {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
 @media screen and (min-width: 1024px) {
   .circle {
     align-self: flex-start;
@@ -738,6 +956,12 @@ footer {
     position: absolute;
     margin-left: 100px;
     height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .logo {
+    margin-top: 0.25%;
   }
 
   .nav img {
@@ -763,7 +987,7 @@ footer {
   .vector-nav {
     margin-left: 85%;
     width: 2vw;
-    padding-top: 0%;
+    padding-top: 0.25%;
   }
 
   .menu {
@@ -772,5 +996,82 @@ footer {
 
   .four {
     font-size: 1vw;
+  }
+
+  .modal {
+    display: flex;
+    width: 80.27777777777777%;
+    height: 90vh;
+    font-size: 20px;
+  }
+
+  .modal-title {
+    font-size: 40px;
+  }
+
+  .X {
+    top: 10%;
+  }
+
+  .modal-img {
+    margin-top: 12px;
+    width: 96.68411867364748%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-info {
+    margin-top: 30px;
+    line-height: 30px;
+    width: 56.055363321799305%;
+    color: white;
+  }
+
+  #modal-tags {
+    width: 30.527050610820243%;
+    margin-top: 80px;
+    margin-bottom: 48px;
+  }
+
+  .modal-buttons {
+    flex-direction: row;
+    width: 30.527050610820243%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+  }
+
+  .modal-button {
+    display: flex;
+    background-color: #7d73fc;
+    color: black;
+    transition-duration: 0.4s;
+    border: none;
+    padding: 1.3888888888888888vw;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 150px;
+    height: auto;
+  }
+
+  .repo {
+    width: 170px;
+    margin-left: 78px;
+  }
+
+  .icon {
+    margin: auto auto;
+  }
+
+  .git {
+    font-size: 20px;
+    margin-left: 7px;
+  }
+
+  .modal-button span {
+    font-size: 12px;
+    margin: auto auto;
   }
 }

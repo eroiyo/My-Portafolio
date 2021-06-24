@@ -1,34 +1,34 @@
 import data from './data.js';
-function Project(id, title, overview, description, big_image, image, alt, big_alt, tags, live, repo) {
+function Project(id, title, view, description, bigImage, image, alt, bigAlt, tags, live, repo) {
   if (image !== undefined) {
-    this.image = image
+    this.image = image;
   } else {
     this.image = 'assest/placeholder.png';
   }
-  if (big_image !== undefined) {
-    this.big_image = big_image
+  if (bigImage !== undefined) {
+    this.bigImage = bigImage;
   } else {
-    this.big_image = 'assest/Big.png';
+    this.bigImage = 'assest/Big.png';
   }
   if (title !== undefined) {
     this.title = title;
   } else {
-    this.title = 'Multi-Post Stories'
+    this.title = 'Multi-Post Stories';
   }
   if (alt !== undefined) {
     this.alt = alt;
   } else {
-    this.alt = 'placeholder'
+    this.alt = 'placeholder';
   }
-  if (big_alt !== undefined) {
-    this.big_alt = big_alt;
+  if (bigAlt !== undefined) {
+    this.bigAlt = bigAlt;
   } else {
-    this.big_alt = 'big_placeholder'
+    this.bigAlt = 'big_placeholder';
   }
-  if (overview !== undefined) {
-    this.overview = overview;
+  if (view !== undefined) {
+    this.overview = view;
   } else {
-    this.overview = "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text."
+    this.overview = "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.";
   }
   if (description !== undefined) {
     this.description = description;
@@ -48,12 +48,12 @@ function Project(id, title, overview, description, big_image, image, alt, big_al
   if (repo !== undefined) {
     this.repo = repo;
   } else {
-    this.repo = '#'
+    this.repo = '#';
   }
   if (id !== undefined) {
     this.id = id;
   } else {
-    this.id = '?'
+    this.id = '?';
   }
 
   this.appear = function (right) {
@@ -63,25 +63,25 @@ function Project(id, title, overview, description, big_image, image, alt, big_al
     const first = document.createElement('div');
     first.classList.add('first');
     list.appendChild(box);
-    const part_a = document.createElement('div');
-    part_a.classList.add('part-a')
-    const sm_img = document.createElement('img');
-    sm_img.src = this.image;
-    sm_img.alt = this.alt;
-    sm_img.classList.add('placeholder');
-    part_a.appendChild(sm_img);
+    const partA = document.createElement('div');
+    partA.classList.add('part-a');
+    const smImg = document.createElement('img');
+    smImg.src = this.image;
+    smImg.alt = this.alt;
+    smImg.classList.add('placeholder');
+    partA.appendChild(smImg);
     const latest = document.createElement('div');
     latest.classList.add('latest');
-    const part_b = document.createElement('div');
-    part_b.classList.add('part_b');
-    const project_title = document.createElement('h2');
-    project_title.classList.add('project-title');
-    project_title.innerHTML = this.title;
-    part_b.appendChild(project_title);
-    const project_info = document.createElement('p');
-    project_info.classList.add('project-info');
-    project_info.innerHTML = this.overview;
-    part_b.appendChild(project_info);
+    const partB = document.createElement('div');
+    partB.classList.add('part-b');
+    const projectTitle = document.createElement('h2');
+    projectTitle.classList.add('project-title');
+    projectTitle.innerHTML = this.title;
+    partB.appendChild(projectTitle);
+    const projectInfo = document.createElement('p');
+    projectInfo.classList.add('project-info');
+    projectInfo.innerHTML = this.overview;
+    partB.appendChild(projectInfo);
     const tags = document.createElement('div');
     tags.classList.add('tags');
     for (let i in this.tags) {
@@ -95,7 +95,7 @@ function Project(id, title, overview, description, big_image, image, alt, big_al
       tags.appendChild(rectangle);
     }
     rectangle.remove();
-    part_b.appendChild(tags)
+    partB.appendChild(tags)
     const button = document.createElement('button');
     button.classList.add('button');
     button.type = 'button';
@@ -105,17 +105,17 @@ function Project(id, title, overview, description, big_image, image, alt, big_al
     const button_span = document.createElement('span');
     button_span.innerHTML = 'See Project';
     button.appendChild(button_span);
-    part_b.appendChild(button);
+    partB.appendChild(button);
 
     if (right == 0) {
-      first.appendChild(part_a);
-      latest.appendChild(part_b);
+      first.appendChild(partA);
+      latest.appendChild(partB);
       box.appendChild(first);
       box.appendChild(latest)
       box.classList.add('project-card');
     } else {
-      first.appendChild(part_b);
-      latest.appendChild(part_a);
+      first.appendChild(partB);
+      latest.appendChild(partA);
       box.appendChild(latest);
       box.appendChild(first)
       box.classList.add('project-card2');
@@ -128,7 +128,7 @@ function Project(id, title, overview, description, big_image, image, alt, big_al
     const modal_title = document.querySelector('.modal-title')
     modal_title.textContent = this.title;
     const modal_image = document.querySelector('.modal-img');
-    modal_image.src = this.big_image;
+    modal_image.src = this.bigImage;
     const modal_info = document.querySelector('.modal-info');
     modal_info.textContent = this.description;
     const modal_tags = document.querySelector('#modal-tags')
@@ -160,7 +160,7 @@ function Project(id, title, overview, description, big_image, image, alt, big_al
   const bt = document.querySelector('.modal-buttons')
   function callp(num) {
     let buffer = myProjects[num];
-    let p = new Project(buffer.id, buffer.title, buffer.overview, buffer.description, buffer.big_image, buffer.image, buffer.alt, buffer.alt, undefined, buffer.live, buffer.repo);
+    let p = new Project(buffer.id, buffer.title, buffer.overview, buffer.description, buffer.bigImage, buffer.image, buffer.alt, buffer.alt, undefined, buffer.live, buffer.repo);
     p.message();
     bt.style.display = "flex"
     modal.style.visibility = "visible";

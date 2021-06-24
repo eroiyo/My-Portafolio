@@ -1,8 +1,8 @@
 const nav2 = document.querySelector('.secondary-nav');
 const screenSize = window.matchMedia('(min-width: 1024px)');
 const logo = document.querySelector('.logo');
-const modal = document.querySelector('.modal-background')
-const bt = document.querySelector('.modal-buttons')
+const modal = document.querySelector('.modal-background');
+const bt = document.querySelector('.modal-buttons');
 
 function clickFunction() {
   const para = document.getElementById('toggle-icon');
@@ -26,8 +26,8 @@ function phone(screenSize) {
   }
 }
 
-function close_modal() {
-  bt.style.display = 'none'
+function closeModal() {
+  bt.style.display = 'none';
   modal.style.visibility = 'hidden';
 }
 

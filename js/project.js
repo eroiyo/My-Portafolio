@@ -56,7 +56,7 @@ function Project(object) {
   } else {
     this.id = '?';
   }
-  this.appear = function(right) {
+  this.appear = function (right) {
     let rectangle = 0;
     const objetive = document.getElementById('projects');
     const list = document.createElement('li');
@@ -96,6 +96,7 @@ function Project(object) {
       tags.appendChild(span);
       if (tagsCurrentValues.length !== i + 1) tags.appendChild(rectangle);
     }
+    rectangle.remove();
     partB.appendChild(tags);
     const button = document.createElement('button');
     button.classList.add('button');

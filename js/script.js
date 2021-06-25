@@ -56,7 +56,7 @@ function errorb(input) {
 function isEmpty(input, small, message) {
   if (input.value.trim() === '') {
     error(input, small, message);
-    return false
+    return false;
   } else {
     success(input, small);
     return true;
@@ -75,20 +75,19 @@ function shouldBeLowercase(input, small, message) {
 }
 
 function areaCharacterLimit(input, small, message) {
-  if(textarea.value.length > 500){
-  error(input,small,message);
-  return false;
-  }else{
-    success(input,small);
+  if (textarea.value.length > 500) {
+    error(input, small, message);
+    return false;
+  } else {
+    success(input, small);
     return true;
   }
 }
 
-
 phone(screenSize);
 screenSize.addListener(phone);
 closeModal();
-///form proccess
+
 const form = document.getElementById('contact-form');
 const sname = document.querySelector('.small-name');
 const nameInput = document.getElementById('name');
@@ -109,8 +108,8 @@ form.addEventListener('submit', (event) => {
 
   if (isEmpty(textarea, stextarea, 'Message is required') === false) {
     preventOrNot = true;
-  } else{
-    if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false){
+  } else {
+    if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false) {
       preventOrNot = true;
     }
   }

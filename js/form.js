@@ -2,12 +2,11 @@ function storageAvailable(type) {
   let storage;
   try {
     storage = window[type];
-    var x = '__storage_test__';
+    let x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;
-  }
-  catch (e) {
+  } catch (e) {
     return e instanceof DOMException && (e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
   }
 }
@@ -81,9 +80,9 @@ let formobj = 0;
 const standart = new Formobj('', '', '', '');
 
 if (storageAvailable('localStorage')) {
-  formobj = JSON.parse(localStorage.getItem('formobj'))
+  formobj = JSON.parse(localStorage.getItem('formobj'));
   if (formobj === null) {
-    formobj = standart
+    formobj = standart;
   }
   nameInput.value = formobj.name;
   nameL.value = formobj.last;
@@ -93,7 +92,7 @@ if (storageAvailable('localStorage')) {
 
 form.addEventListener('reset', () => {
   localStorage.setItem('formobj', JSON.stringify(standart));
-})
+});
 
 form.addEventListener('submit', (event) => {
   let preventOrNot = false;

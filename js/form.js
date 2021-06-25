@@ -1,5 +1,5 @@
 function storageAvailable(type) {
-  var storage;
+  let storage;
   try {
     storage = window[type];
     var x = '__storage_test__';
@@ -8,12 +8,7 @@ function storageAvailable(type) {
     return true;
   }
   catch (e) {
-    return e instanceof DOMException && (
-      e.code === 22 ||
-      e.code === 1014 ||
-      e.name === 'QuotaExceededError' ||
-      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-      (storage && storage.length !== 0);
+    return e instanceof DOMException && (e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
   }
 }
 
@@ -74,11 +69,6 @@ function areaCharacterLimit(input, small, message) {
   success(input, small);
   return true;
 }
-
-phone(screenSize);
-screenSize.addListener(phone);
-closeModal();
-
 const form = document.getElementById('contact-form');
 const sname = document.querySelector('.small-name');
 const nameInput = document.getElementById('name');
@@ -101,8 +91,8 @@ if (storageAvailable('localStorage')) {
   textarea.value = formobj.message;
 }
 
-form.addEventListener('reset', (event) => {
-  localStorage.setItem('formobj', JSON.stringify(standart))
+form.addEventListener('reset', () => {
+  localStorage.setItem('formobj', JSON.stringify(standart));
 })
 
 form.addEventListener('submit', (event) => {
@@ -124,7 +114,11 @@ form.addEventListener('submit', (event) => {
     preventOrNot = true;
   }
 
-  formobj.name = nameInput.value; formobj.last = nameL.value; formobj.email = email.value; formobj.message = textarea.value; localStorage.setItem('formobj', JSON.stringify(formobj));
+  formobj.name = nameInput.value;
+  formobj.last = nameL.value;
+  formobj.email = email.value;
+  formobj.message = textarea.value;
+  localStorage.setItem('formobj', JSON.stringify(formobj));
 
   if (preventOrNot) {
     event.preventDefault();

@@ -74,9 +74,14 @@ function shouldBeLowercase(input, small, message) {
   }
 }
 
-function areaCharacterLimit(textarea, stextarea, message) {
-  stextarea.textContent = message;
-  return textarea.value.length > 500;
+function areaCharacterLimit(input, small, message) {
+  if(textarea.value.length > 500){
+  error(input,small,message)
+  return false;
+  }else{
+    success(input,small);
+    return true;
+  }
 }
 
 
@@ -104,6 +109,10 @@ form.addEventListener('submit', (event) => {
 
   if (isEmpty(textarea, stextarea, 'Message is required') === false) {
     preventOrNot = true;
+  } else{
+    if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false){
+      preventOrNot = true;
+    }
   }
 
   if (isEmpty(email, semail, 'Email is required') === false) {
@@ -113,10 +122,6 @@ form.addEventListener('submit', (event) => {
       preventOrNot = true;
     }
   }
-
-  if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500'))
-    event.preventDefault();
-
   if (preventOrNot) {
     event.preventDefault();
   }

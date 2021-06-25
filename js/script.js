@@ -58,8 +58,8 @@ function isEmpty(input, small, message) {
     error(input, small, message);
     return false;
   }
-    success(input, small);
-    return true;
+  success(input, small);
+  return true;
 }
 
 function shouldBeLowercase(input, small, message) {
@@ -68,9 +68,9 @@ function shouldBeLowercase(input, small, message) {
     small.textContent = message + should;
     error(input, small, message);
     return false;
-  } else {
-    success(input, small);
   }
+    success(input, small);
+    return true;
 }
 
 function areaCharacterLimit(input, small, message) {
@@ -78,8 +78,8 @@ function areaCharacterLimit(input, small, message) {
     error(input, small, message);
     return false;
   }
-    success(input, small);
-    return true;
+  success(input, small);
+  return true;
 }
 
 phone(screenSize);
@@ -103,7 +103,6 @@ form.addEventListener('submit', (event) => {
   } else {
     successb(nameL);
   }
-
   if (isEmpty(textarea, stextarea, 'Message is required') === false) {
     preventOrNot = true;
   }

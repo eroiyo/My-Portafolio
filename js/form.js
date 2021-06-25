@@ -2,7 +2,7 @@ function storageAvailable(type) {
   let storage;
   try {
     storage = window[type];
-    let x = '__storage_test__';
+    const x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;

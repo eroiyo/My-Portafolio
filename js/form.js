@@ -101,6 +101,10 @@ email.value = formobj.email;
 textarea.value = formobj.message;
 }
 
+form.addEventListener('reset', (event) => {
+  localStorage.setItem('formobj',JSON.stringify(standart))
+})
+
 form.addEventListener('submit', (event) => {
   let preventOrNot = false;
   if (isEmpty(nameInput, sname, 'Name is required') === false) {
@@ -119,7 +123,6 @@ form.addEventListener('submit', (event) => {
   } else if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false) {
     preventOrNot = true;
   }
-
 
   
   if (preventOrNot) {

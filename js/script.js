@@ -69,8 +69,8 @@ function shouldBeLowercase(input, small, message) {
     error(input, small, message);
     return false;
   }
-    success(input, small);
-    return true;
+  success(input, small);
+  return true;
 }
 
 function areaCharacterLimit(input, small, message) {

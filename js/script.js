@@ -65,7 +65,7 @@ function isEmpty(input, small, message) {
 function shouldBeLowercase(input, small, message) {
   const should = (input.value).toLowerCase();
   if (input.value !== should) {
-    small.textContent = message + should;
+    message = message + should;
     error(input, small, message);
     return false;
   }

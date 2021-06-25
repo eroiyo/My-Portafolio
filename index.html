@@ -165,14 +165,17 @@
       that you need built or a project that needs coding. I’d love to help
       with it
     </p>
-    <form action="https://formspree.io/f/xayajwqb" method="POST">
+    <form action="https://formspree.io/f/xayajwqb" method="POST" id='contact-form'>
+      <small class="small-name"></small>
       <div class="names">
-        <input placeholder="Name" class="name" type="text" name="name" maxlength="30" id="name" required />
-        <input placeholder="Last Name" class="last" type="text" name="last" maxlength="30" id="last" required />
+        <input placeholder="Name" class="name" type="text" name="name" maxlength="30" id="name"  />
+        <input placeholder="Last Name (Optional)" class="last" type="text" name="last" maxlength="30" id="last"/>
       </div>
-      <input placeholder="exemple@email.com" type="email" class="email" id="email" name="email" required />
-      <textarea name="textarea" id="textarea" cols="30" maxlength="500" rows="10" placeholder="Write your message here"
-        required></textarea>
+      <small class="small-email"></small>
+      <input placeholder="exemple@email.com" type="email" class="email" id="email" name="email" />
+      <small class=small-textarea></small>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Write your message here"
+        ></textarea>
       <button class="submit" type="submit">
         <span class="submit-text">Send</span>
       </button>

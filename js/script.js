@@ -74,6 +74,11 @@ function shouldBeLowercase(input, small, message) {
   }
 }
 
+function areaCharacterLimit(textarea, stextarea, message) {
+  stextarea.textContent = message;
+  return textarea.value.length > 500;
+}
+
 
 phone(screenSize);
 screenSize.addListener(phone);
@@ -109,7 +114,10 @@ form.addEventListener('submit', (event) => {
     }
   }
 
-  if (preventOrNot === true) {
+  if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500'))
+    event.preventDefault();
+
+  if (preventOrNot) {
     event.preventDefault();
   }
 });

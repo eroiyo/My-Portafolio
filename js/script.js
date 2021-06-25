@@ -31,48 +31,46 @@ function closeModal() {
   modal.style.visibility = 'hidden';
 }
 
-function isEmpty(input,small,message) {
-  if(input.value.trim() === '')
-  {
-    error(input,small,message);
+function isEmpty(input, small, message) {
+  if (input.value.trim() === '') {
+    error(input, small, message);
     return false
   } else {
-    success(input,small);
+    success(input, small);
     return true;
   }
 }
 
-function success(input,small){
+function success(input, small) {
   input.classList.add('success')
   input.classList.remove('error')
   small.textContent = '';
 }
 
-function successb(input){
+function successb(input) {
   input.classList.add('success')
   input.classList.remove('error')
 }
 
-function error(input,small,message){
+function error(input, small, message) {
   input.classList.add('error')
   input.classList.remove('success')
   small.textContent = message;
 }
 
-function errorb(input){
+function errorb(input) {
   input.classList.add('error')
   input.classList.remove('success')
 }
 
-function shouldBeLowercase(input,small,message)
-{
+function shouldBeLowercase(input, small, message) {
   const should = (email.value).toLowerCase();
-  if(email.value!==should){
-    small.textContent = message;
-    error(input,small,message);
+  if (email.value !== should) {
+    small.textContent = message + should;
+    error(input, small, message);
     return false;
-  }else{
-    success(input,small);
+  } else {
+    success(input, small);
   }
 }
 
@@ -84,7 +82,7 @@ closeModal();
 const form = document.getElementById('contact-form');
 const sname = document.querySelector('.small-name');
 const nameInput = document.getElementById('name');
-const nameL =document.getElementById('last')
+const nameL = document.getElementById('last')
 const semail = document.querySelector('.small-email');
 const email = document.getElementById('email');
 const textarea = document.getElementById('textarea');
@@ -92,26 +90,26 @@ const stextarea = document.querySelector('.small-textarea');
 
 form.addEventListener('submit', (event) => {
   let preventOrNot = false;
-  if(isEmpty(nameInput,sname,'Name is required') === false) {
-    preventOrNot=true;
+  if (isEmpty(nameInput, sname, 'Name is required') === false) {
+    preventOrNot = true;
     errorb(nameL)
-  }else{
+  } else {
     successb(nameL)
   }
 
-  if(isEmpty(textarea,stextarea,'Message is required') === false) {
-    preventOrNot=true;
+  if (isEmpty(textarea, stextarea, 'Message is required') === false) {
+    preventOrNot = true;
   }
 
-  if(isEmpty(email,semail,'Email is required') === false) {
-    preventOrNot=true;
-  }else{
-    if(shouldBeLowercase(email,semail,'Email should be lowercase, you can try ') === false){
-      preventOrNot=true;
+  if (isEmpty(email, semail, 'Email is required') === false) {
+    preventOrNot = true;
+  } else {
+    if (shouldBeLowercase(email, semail, 'Email should be lowercase, you can try ') === false) {
+      preventOrNot = true;
     }
   }
 
-  if(preventOrNot ===true){
+  if (preventOrNot === true) {
     event.preventDefault();
   }
 });

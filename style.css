@@ -504,7 +504,7 @@ input.last {
   border-style: solid;
 }
 
- small {
+small {
   margin-top: 2vw;
   margin-bottom: 2vw;
   text-align: left;
@@ -893,7 +893,7 @@ footer {
     width: 52.5%;
   }
 
-  small{
+  small {
     height: 16px;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
@@ -919,7 +919,6 @@ footer {
     width: 47.5%;
     height: 4.026845637583893vw;
     margin-left: 0%;
-    margin-top: 0px;
   }
 
   .names {

@@ -57,15 +57,14 @@ function isEmpty(input, small, message) {
   if (input.value.trim() === '') {
     error(input, small, message);
     return false;
-  } else {
+  }
     success(input, small);
     return true;
-  }
 }
 
 function shouldBeLowercase(input, small, message) {
-  const should = (email.value).toLowerCase();
-  if (email.value !== should) {
+  const should = (input.value).toLowerCase();
+  if (input.value !== should) {
     small.textContent = message + should;
     error(input, small, message);
     return false;
@@ -75,13 +74,12 @@ function shouldBeLowercase(input, small, message) {
 }
 
 function areaCharacterLimit(input, small, message) {
-  if (textarea.value.length > 500) {
+  if (input.value.length > 500) {
     error(input, small, message);
     return false;
-  } else {
+  }
     success(input, small);
     return true;
-  }
 }
 
 phone(screenSize);
@@ -108,18 +106,14 @@ form.addEventListener('submit', (event) => {
 
   if (isEmpty(textarea, stextarea, 'Message is required') === false) {
     preventOrNot = true;
-  } else {
-    if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false) {
-      preventOrNot = true;
-    }
   }
-
+  else if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false) {
+    preventOrNot = true;
+  }
   if (isEmpty(email, semail, 'Email is required') === false) {
     preventOrNot = true;
-  } else {
-    if (shouldBeLowercase(email, semail, 'Email should be lowercase, you can try ') === false) {
-      preventOrNot = true;
-    }
+  } else if (shouldBeLowercase(email, semail, 'Email should be lowercase, you can try ') === false) {
+    preventOrNot = true;
   }
   if (preventOrNot) {
     event.preventDefault();

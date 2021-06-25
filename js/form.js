@@ -82,12 +82,17 @@ const standart = new Formobj('', '', '', '');
 if (storageAvailable('localStorage')) {
   formobj = JSON.parse(localStorage.getItem('formobj'));
   if (formobj === null) {
-    formobj = standart;
+    formobj = new Formobj(nameInput.value, nameL.value ,email.value, textarea.value)
   }
   nameInput.value = formobj.name;
   nameL.value = formobj.last;
   email.value = formobj.email;
   textarea.value = formobj.message;
+}
+
+function save() {
+  formobj = new Formobj(nameInput.value, nameL.value ,email.value, textarea.value)
+  localStorage.setItem('formobj', JSON.stringify(formobj));
 }
 
 form.addEventListener('reset', () => {
@@ -112,14 +117,12 @@ form.addEventListener('submit', (event) => {
   } else if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false) {
     preventOrNot = true;
   }
-
-  formobj.name = nameInput.value;
-  formobj.last = nameL.value;
-  formobj.email = email.value;
-  formobj.message = textarea.value;
-  localStorage.setItem('formobj', JSON.stringify(formobj));
-
   if (preventOrNot) {
     event.preventDefault();
   }
 });
+
+nameInput.onchange=save;
+nameL.onchange=save;
+email.onchange=save;
+textarea.onchange=save;

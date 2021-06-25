@@ -1,27 +1,27 @@
 function storageAvailable(type) {
   var storage;
   try {
-      storage = window[type];
-      var x = '__storage_test__';
-      storage.setItem(x, x);
-      storage.removeItem(x);
-      return true;
+    storage = window[type];
+    var x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
   }
-  catch(e) {
-      return e instanceof DOMException && (
-          e.code === 22 ||
-          e.code === 1014 ||
-          e.name === 'QuotaExceededError' ||
-          e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-          (storage && storage.length !== 0);
+  catch (e) {
+    return e instanceof DOMException && (
+      e.code === 22 ||
+      e.code === 1014 ||
+      e.name === 'QuotaExceededError' ||
+      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+      (storage && storage.length !== 0);
   }
 }
 
-function Formobj (name, last, email, message){
-this.name=name;
-this.last=last;
-this.email=email;
-this.message=message;
+function Formobj(name, last, email, message) {
+  this.name = name;
+  this.last = last;
+  this.email = email;
+  this.message = message;
 }
 
 function success(input, small) {
@@ -87,22 +87,22 @@ const semail = document.querySelector('.small-email');
 const email = document.getElementById('email');
 const textarea = document.getElementById('textarea');
 const stextarea = document.querySelector('.small-textarea');
-let formobj =0;
-const standart = new Formobj('', '', '','');
+let formobj = 0;
+const standart = new Formobj('', '', '', '');
 
 if (storageAvailable('localStorage')) {
-formobj= JSON.parse(localStorage.getItem('formobj'))
-if(formobj===null){
-  formobj=standart
-}
-nameInput.value = formobj.name;
-nameL.value = formobj.last;
-email.value = formobj.email;
-textarea.value = formobj.message;
+  formobj = JSON.parse(localStorage.getItem('formobj'))
+  if (formobj === null) {
+    formobj = standart
+  }
+  nameInput.value = formobj.name;
+  nameL.value = formobj.last;
+  email.value = formobj.email;
+  textarea.value = formobj.message;
 }
 
 form.addEventListener('reset', (event) => {
-  localStorage.setItem('formobj',JSON.stringify(standart))
+  localStorage.setItem('formobj', JSON.stringify(standart))
 })
 
 form.addEventListener('submit', (event) => {
@@ -124,7 +124,8 @@ form.addEventListener('submit', (event) => {
     preventOrNot = true;
   }
 
-  
+  formobj.name = nameInput.value; formobj.last = nameL.value; formobj.email = email.value; formobj.message = textarea.value; localStorage.setItem('formobj', JSON.stringify(formobj));
+
   if (preventOrNot) {
     event.preventDefault();
   }

@@ -103,15 +103,15 @@ form.addEventListener('submit', (event) => {
   } else {
     successb(nameL);
   }
+  if (isEmpty(email, semail, 'Email is required') === false) {
+    preventOrNot = true;
+  } else if (shouldBeLowercase(email, semail, 'Email should be lowercase, you can try ') === false) {
+    preventOrNot = true;
+  }
   if (isEmpty(textarea, stextarea, 'Message is required') === false) {
     preventOrNot = true;
   }
   else if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false) {
-    preventOrNot = true;
-  }
-  if (isEmpty(email, semail, 'Email is required') === false) {
-    preventOrNot = true;
-  } else if (shouldBeLowercase(email, semail, 'Email should be lowercase, you can try ') === false) {
     preventOrNot = true;
   }
   if (preventOrNot) {

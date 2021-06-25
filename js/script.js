@@ -110,8 +110,7 @@ form.addEventListener('submit', (event) => {
   }
   if (isEmpty(textarea, stextarea, 'Message is required') === false) {
     preventOrNot = true;
-  }
-  else if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false) {
+  } else if (areaCharacterLimit(textarea, stextarea, 'The character should not exceed 500') === false) {
     preventOrNot = true;
   }
   if (preventOrNot) {

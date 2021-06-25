@@ -480,7 +480,6 @@ form {
 
 input {
   text-align: start;
-  margin-top: 2vw;
   background-color: white;
   color: #191765;
   font-size: 4vw;
@@ -489,14 +488,35 @@ input {
   border: none;
 }
 
+.error {
+  border-color: #e74c3c;
+  border-width: 2px;
+  border-style: solid;
+}
+
 input.last {
   display: none;
+}
+
+.success {
+  border-color: green;
+  border-width: 2px;
+  border-style: solid;
+}
+
+small{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  text-align: left;
+  align-self: flex-start;
+  display: flex;
+  color: #e74c3c;
+  height: 16px;
 }
 
 textarea {
   resize: none;
   width: 95%;
-  margin-top: 4vh;
   background-color: white;
   color: #191765;
   text-align: start;
@@ -884,6 +904,7 @@ footer {
     height: 4.026845637583893vw;
     margin-left: 0%;
     margin-right: auto;
+    margin-top: 0px;
   }
 
   input.last {
@@ -892,6 +913,7 @@ footer {
     width: 47.5%;
     height: 4.026845637583893vw;
     margin-right: 0%;
+    margin-top: 0px;
   }
 
   .names {
@@ -915,6 +937,7 @@ footer {
     line-height: 28px;
     height: 61px;
     margin-top: 16px;
+    margin-bottom: 2vw;
   }
 
   textarea {

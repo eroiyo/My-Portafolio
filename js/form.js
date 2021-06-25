@@ -82,7 +82,7 @@ const standart = new Formobj('', '', '', '');
 if (storageAvailable('localStorage')) {
   formobj = JSON.parse(localStorage.getItem('formobj'));
   if (formobj === null) {
-    formobj = new Formobj(nameInput.value, nameL.value, email.value, textarea.value)
+    formobj = new Formobj(nameInput.value, nameL.value, email.value, textarea.value);
   }
   nameInput.value = formobj.name;
   nameL.value = formobj.last;

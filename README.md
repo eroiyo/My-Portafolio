@@ -33,7 +33,7 @@ Unzip the files and leave them all in the same folder
 
 ### Usage
 
-Run Index.html using any navigator, you can read all the information of the page
+Run Index.html using any navigator, you can read all the information of the page.
 
 ## 🤝 Contributing
 
